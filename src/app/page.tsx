@@ -29,6 +29,7 @@ export default function LandingPage() {
             navItems={[
                 { name: "Anasayfa", id: "/" },
                 { name: "Hizmetler", id: "/services" },
+                { name: "Tuval", id: "/tuval" },
                 { name: "İletişim", id: "#contact" },
             ]}
             brandName="Deniz Çerçeve"
@@ -87,7 +88,7 @@ export default function LandingPage() {
         <div id="footer" data-section="footer">
             <FooterBase
             columns={[
-                { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "İletişim", href: "#contact" }] },
+                { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "Tuval", href: "/tuval" }, { label: "İletişim", href: "#contact" }] },
                 { title: "İletişim", items: [{ label: "0312 397 48 49", href: "tel:+903123974849" }] },
             ]}
             logoText="Deniz Çerçeve"
