@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
+import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
 import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
@@ -10,6 +10,16 @@ import FooterBase from '@/components/sections/footer/FooterBase';
 import { Palette, Ruler, Image } from "lucide-react";
 
 export default function CanvasPage() {
+  const navItems = [
+    { name: "Anasayfa", id: "/" },
+    { name: "Çerçeveleme Merkezi", id: "/services" },
+    { name: "Tuval", id: "/tuval" },
+    { name: "Kanvas Tablo Mağazası", id: "/ankara-kanvas-tablo" },
+    { name: "Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
+    { name: "Şövale", id: "/ankara-sovale-satis-kiralama" },
+    { name: "İletişim", id: "#contact" },
+  ];
+
   return (
     <ThemeProvider
         defaultButtonVariant="text-shift"
@@ -25,18 +35,10 @@ export default function CanvasPage() {
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-            <NavbarLayoutFloatingInline
-            navItems={[
-                { name: "Anasayfa", id: "/" },
-                { name: "Hizmetler", id: "/services" },
-                { name: "Tuval", id: "/tuval" },
-                { name: "Kanvas", id: "/ankara-kanvas-tablo" },
-                { name: "Kanvas İmalatı", id: "/ankara-kanvas-tablo-imalati" },
-                { name: "Ankara’da Şövale Satışı ve Kiralama", id: "/ankara-sovale-satis-kiralama" },
-                { name: "İletişim", id: "#contact" },
-            ]}
-            brandName="Deniz Çerçeve"
-            button={{ text: "Teklif Al", href: "#contact" }}
+            <NavbarStyleFullscreen
+              navItems={navItems}
+              brandName="Deniz Çerçeve"
+              button={{ text: "Teklif Al", href: "#contact" }}
             />
         </div>
 
