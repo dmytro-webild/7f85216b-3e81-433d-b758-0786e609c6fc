@@ -37,9 +37,9 @@ export default function LandingPage() {
       <ReactLenis root>
         <div id="nav" data-section="nav">
             <NavbarLayoutFloatingInline
-            links={navItems}
-            brandName="Deniz Çerçeve"
-            button={{ text: "Teklif Al", href: "/services" }}
+              navItems={navItems}
+              brandName="Deniz Çerçeve"
+              button={{ text: "Teklif Al", href: "/services" }}
             />
         </div>
 
