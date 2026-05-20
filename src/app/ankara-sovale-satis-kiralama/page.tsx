@@ -13,7 +13,7 @@ import { Phone, MessageCircle, MapPin, Brush } from "lucide-react";
 export default function SovalePage() {
   const navItems = [
     { name: "Anasayfa", id: "/" },
-    { name: "Çerçeveleme Merkezi", id: "/services" },
+    { name: "Çerçeveleme Merkezi", id: "/cerceveleme-merkezi" },
     { name: "Tuval", id: "/tuval" },
     { name: "Kanvas Tablo Mağazası", id: "/ankara-kanvas-tablo" },
     { name: "Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
@@ -99,7 +99,7 @@ export default function SovalePage() {
         <div id="footer" data-section="footer">
             <FooterBase
             columns={[
-                { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "Ankara’da Şövale Satışı ve Kiralama", href: "/ankara-sovale-satis-kiralama" }, { label: "İletişim", href: "#contact" }] },
+                { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/cerceveleme-merkezi" }, { label: "Ankara’da Şövale Satışı ve Kiralama", href: "/ankara-sovale-satis-kiralama" }, { label: "İletişim", href: "#contact" }] },
             ]}
             logoText="Deniz Çerçeve"
             copyrightText="© 1974-2025 | Deniz Çerçeve Ankara"
