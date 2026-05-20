@@ -5,10 +5,11 @@ import ReactLenis from "lenis/react";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
 import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
-import MetricCardEleven from '@/components/sections/metrics/MetricCardEleven';
+import TimelineProcessFlow from '@/components/cardStack/layouts/timelines/TimelineProcessFlow';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
-import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
+import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterBase from '@/components/sections/footer/FooterBase';
+import { Palette, Ruler, PackageCheck, Zap } from "lucide-react";
 
 export default function ServicesPage() {
   return (
@@ -34,51 +35,69 @@ export default function ServicesPage() {
           brandName="Deniz Çerçeve"
           button={{ text: "İletişim", href: "#contact" }}
         />
-        <HeroCarouselLogo
-            logoText="Profesyonel Hizmetlerimiz"
-            description="Deniz Çerçeve olarak sunduğumuz tüm çerçeveleme, sanat ve koruma çözümlerini inceleyin."
-            buttons={[{ text: "Teklif Al", href: "#contact" }]}
-            slides={[{ imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg" }]}
-        />
-        <FeatureCardTen
-            animationType="slide-up"
+
+        <div id="hero">
+          <HeroCarouselLogo
+              logoText="Ankara’da Resim ve Tablo Çerçeveleme Merkezi"
+              description="Yenimahalle ve çevresinde sanat eserlerinize değer katıyor, profesyonel çerçeveleme ve şase üretim hizmetlerimizle estetiği ön planda tutuyoruz."
+              buttons={[{ text: "Teklif Al", href: "#contact" }]}
+              slides={[{ imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg", imageAlt: "Profesyonel çerçeveleme" }]}
+          />
+        </div>
+
+        <div id="framing-expertise">
+          <FeatureCardTen
+            title="Uzmanlık Alanlarımız"
+            description="Ankara'da çerçeveleme sanatını tecrübemizle birleştiriyoruz."
             textboxLayout="split"
+            animationType="slide-up"
             useInvertedBackground={true}
-            title="Hizmetlerimiz"
-            description="Sanat eserleriniz için en uygun koruma ve sunum çözümleri."
             features={[
-                { title: "Özel Çerçeveleme", description: "Sanat eserleri, fotoğraflar ve özel eşyalarınız için estetik çerçeveler.", media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg" }, items: [], reverse: false },
-                { title: "Kanvas Şase", description: "Tuvalinizi uzun yıllar koruyacak ahşap şase imalatı.", media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg" }, items: [], reverse: true }
+                { title: "Sanatsal Çerçeveleme", description: "Değerli tablolarınız için özel tasarımlar.", items: [{ icon: Palette, text: "Sanat eseri koruma" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg" }, reverse: false },
+                { title: "Özel Ölçü Üretim", description: "İhtiyacınıza göre milimetrik kesim ve montaj.", items: [{ icon: Ruler, text: "Hassas ölçüm teknolojisi" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg" }, reverse: true }
             ]}
-        />
-        <MetricCardEleven
-            animationType="slide-up"
-            title="Fiyatlandırma İlkeleri"
-            description="Kaliteli işçilik ve adil fiyatlandırma anlayışımız."
-            metrics={[
-                { id: "p1", value: "Şeffaf", title: "Net Fiyatlandırma", description: "Gizli maliyetler olmadan, malzeme ve işçilik bazlı hesaplama.", imageSrc: "http://img.b2bpic.net/free-photo/blank-frame-collection-wall-vase_23-2148875398.jpg" }
-            ]}
-            textboxLayout="split"
-            useInvertedBackground={false}
-        />
-        <FaqSplitMedia
-            faqs={[
-                { id: "q1", title: "Süreç nasıl ilerliyor?", content: "Görselinizi veya ölçünüzü paylaşın, size en uygun modeli sunalım." },
-                { id: "q2", title: "Teslimat süresi nedir?", content: "Ürün tipine göre değişiklik göstermekle birlikte genelde 3-5 iş günüdür." }
-            ]}
+          />
+        </div>
+
+        <div id="workflow">
+            <TimelineProcessFlow
+              title="4 Adımda Çerçeveleme"
+              description="Süreci nasıl yönettiğimizi keşfedin."
+              textboxLayout="split"
+              animationType="slide-up"
+              items={[
+                  { content: "İhtiyaç Belirleme: Sanat eseriniz veya dekorasyon ihtiyacınız için analiz.", media: <Zap className="size-12" />, reverse: false },
+                  { content: "Model Seçimi: Geniş çerçeve model ve renk kataloğumuzdan seçim.", media: <Palette className="size-12" />, reverse: true },
+                  { content: "Profesyonel Üretim: Atölyemizde özenle el yapımı üretim.", media: <Ruler className="size-12" />, reverse: false },
+                  { content: "Teslimat ve Montaj: Eseriniz güvenle hazırlanır ve teslim edilir.", media: <PackageCheck className="size-12" />, reverse: true }
+              ]}
+            />
+        </div>
+
+        <div id="faq">
+          <FaqSplitMedia
             title="Sıkça Sorulan Sorular"
-            description="Merak ettiğiniz her şey burada."
+            description="Çerçeveleme süreci hakkında bilmeniz gerekenler."
             faqsAnimation="slide-up"
             textboxLayout="split"
-            useInvertedBackground={false}
-        />
-        <ContactSplitForm
-            title="Bize Ulaşın"
-            description="Projeniz için hemen ücretsiz danışmanlık alın."
-            inputs={[{ name: "name", type: "text", placeholder: "İsim" }, { name: "email", type: "email", placeholder: "E-posta" }]}
-            textarea={{ name: "message", placeholder: "Mesajınız" }}
-            useInvertedBackground={true}
-        />
+            faqs={[
+                { id: "q1", title: "Özel ölçü çalışıyor musunuz?", content: "Evet, Ankara'daki merkezimizde her boyutta tablo ve fotoğraf için özel ölçü çerçeveleme yapıyoruz." },
+                { id: "q2", title: "Fiyatlar neye göre belirlenir?", content: "Çerçeve profili, kullanılan cam tipi ve emeğe göre uygun fiyatlandırma sunuyoruz." },
+                { id: "q3", title: "Süreç ne kadar sürer?", content: "Genellikle 3-5 iş günü içerisinde teslimat sağlıyoruz." }
+            ]}
+          />
+        </div>
+
+        <div id="contact">
+          <ContactCTA
+              tag="Bize Ulaşın"
+              title="Hemen Teklif Alın"
+              description="Ankara Yenimahalle’deki atölyemizde eserlerinizi profesyonelce çerçeveliyoruz."
+              buttons={[{ text: "WhatsApp Üzerinden Teklif Al", href: "https://wa.me/903123974849" }]}
+              background={{ variant: "sparkles-gradient" }}
+          />
+        </div>
+
         <FooterBase
           columns={[
             { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "İletişim", href: "#contact" }] },
