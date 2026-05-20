@@ -8,8 +8,7 @@ import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
-import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
-import { Brush, BookOpen, Phone, MessageCircle, MapPin } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Brush } from "lucide-react";
 
 export default function SovalePage() {
   const navItems = [
@@ -79,6 +78,7 @@ export default function SovalePage() {
             ]}
             sideTitle="Sıkça Sorulan Sorular"
             faqsAnimation="slide-up"
+            useInvertedBackground={false}
           />
         </div>
 
