@@ -38,8 +38,6 @@ export default function SovalePage() {
             <NavbarStyleFullscreen
               navItems={navItems}
               brandName="Deniz Çerçeve"
-              button={{ text: "Teklif Al", href: "#contact" }}
-              className="[&_a]:text-[13px] [&_a]:leading-[50px] [&_a]:block"
             />
         </div>
 
@@ -85,8 +83,6 @@ export default function SovalePage() {
 
         <div id="contact" data-section="contact-teklif">
             <ContactCTA
-            useInvertedBackground={true}
-            background={{ variant: "sparkles-gradient" }}
             tag="İletişim"
             title="Hemen Teklif Alın veya Mağazayı Ziyaret Edin"
             description="Ankara Yenimahalle'deki atölyemizde şövalelerimizi yakından inceleyin."
@@ -94,6 +90,8 @@ export default function SovalePage() {
                 { text: "WhatsApp", href: "https://wa.me/903123974849" },
                 { text: "Yol Tarifi", href: "https://maps.google.com" }
             ]}
+            background={{ variant: "sparkles-gradient" }}
+            useInvertedBackground={true}
             />
         </div>
 
