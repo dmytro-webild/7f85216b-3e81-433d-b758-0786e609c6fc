@@ -46,7 +46,7 @@ export default function TuvalPage() {
                 { text: "Yol Tarifi", href: "https://maps.google.com" },
                 { text: "Teklif İste", href: "#contact" }
               ]}
-              slides={[{ imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg", imageAlt: "Kaliteli tuval" }]}
+              slides={[{ imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg?_wi=2", imageAlt: "Kaliteli tuval" }]}
           />
         </div>
 
