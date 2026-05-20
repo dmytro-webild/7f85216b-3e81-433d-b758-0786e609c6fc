@@ -31,6 +31,7 @@ export default function LandingPage() {
                 { name: "Hizmetler", id: "/services" },
                 { name: "Tuval", id: "/tuval" },
                 { name: "Kanvas", id: "/ankara-kanvas-tablo" },
+                { name: "Kanvas İmalatı", id: "/ankara-kanvas-tablo-imalati" },
                 { name: "İletişim", id: "#contact" },
             ]}
             brandName="Deniz Çerçeve"
@@ -89,7 +90,7 @@ export default function LandingPage() {
         <div id="footer" data-section="footer">
             <FooterBase
             columns={[
-                { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "Tuval", href: "/tuval" }, { label: "Kanvas", href: "/ankara-kanvas-tablo" }, { label: "İletişim", href: "#contact" }] },
+                { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "Tuval", href: "/tuval" }, { label: "Kanvas", href: "/ankara-kanvas-tablo" }, { label: "Kanvas İmalatı", href: "/ankara-kanvas-tablo-imalati" }, { label: "İletişim", href: "#contact" }] },
                 { title: "İletişim", items: [{ label: "0312 397 48 49", href: "tel:+903123974849" }] },
             ]}
             logoText="Deniz Çerçeve"
