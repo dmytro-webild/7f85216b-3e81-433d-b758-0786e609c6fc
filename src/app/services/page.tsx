@@ -40,6 +40,7 @@ export default function ServicesPage() {
           navItems={navItems}
           brandName="Deniz Çerçeve"
           button={{ text: "İletişim", href: "#contact" }}
+          className="[&_a]:text-[18px] md:[&_a]:text-[20px] [&_a]:leading-[1.4] [&_li]:py-[16px]"
         />
 
         <div id="hero">
