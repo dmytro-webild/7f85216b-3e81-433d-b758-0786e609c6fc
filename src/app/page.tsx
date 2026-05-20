@@ -39,6 +39,7 @@ export default function LandingPage() {
             <NavbarStyleFullscreen
               navItems={navItems}
               brandName="Deniz Çerçeve"
+              button={{ text: "Teklif Al", href: "/services" }}
             />
         </div>
 
@@ -90,6 +91,8 @@ export default function LandingPage() {
 
         <div id="contact-teklif" data-section="contact-teklif">
             <ContactCTA
+            useInvertedBackground={false}
+            background={{ variant: "plain" }}
             tag="İletişim ve Teklif"
             title="Bizimle İletişime Geçin"
             description="Size yardımcı olmamız için aşağıdaki kanallardan bize ulaşabilir veya atölyemizi ziyaret edebilirsiniz."
@@ -99,8 +102,6 @@ export default function LandingPage() {
                 { text: "Yol Tarifi Al", href: "https://maps.google.com" },
                 { text: "Instagram", href: "https://instagram.com" }
             ]}
-            background={{ variant: "plain" }}
-            useInvertedBackground={false}
             />
         </div>
 
