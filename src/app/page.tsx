@@ -46,8 +46,8 @@ export default function LandingPage() {
                 { text: "Teklif Al", href: "#contact" },
             ]}
             slides={[
-                { imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg", imageAlt: "Çerçeveleme atölyesi" },
-                { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg", imageAlt: "Özel çerçeve üretimi" },
+                { imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg?_wi=1", imageAlt: "Çerçeveleme atölyesi" },
+                { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=1", imageAlt: "Özel çerçeve üretimi" },
             ]}
             />
         </div>
