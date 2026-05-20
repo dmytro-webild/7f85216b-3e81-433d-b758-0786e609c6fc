@@ -13,7 +13,7 @@ import { Image, Phone, MessageCircle, MapPin, Palette, Ruler } from "lucide-reac
 export default function LandingPage() {
   const navItems = [
     { name: "Anasayfa", id: "/" },
-    { name: "Çerçeveleme Merkezi", id: "/services" },
+    { name: "Çerçeveleme Merkezi", id: "/cerceveleme-merkezi" },
     { name: "Tuval", id: "/tuval" },
     { name: "Kanvas Tablo Mağazası", id: "/ankara-kanvas-tablo" },
     { name: "Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
@@ -39,7 +39,7 @@ export default function LandingPage() {
             <NavbarStyleFullscreen
               navItems={navItems}
               brandName="Deniz Çerçeve"
-              button={{ text: "Teklif Al", href: "/services" }}
+              button={{ text: "Teklif Al", href: "/cerceveleme-merkezi" }}
             />
         </div>
 
@@ -48,7 +48,7 @@ export default function LandingPage() {
             logoText="Deniz Çerçeve"
             description="Ankara’da 1974’ten beri resim çerçeveleme, tuval ve kanvas şase üretiminde tecrübe ve kalite. Ölçünüze özel çözümler için hemen teklif alın."
             buttons={[
-                { text: "Hizmetlerimizi İnceleyin", href: "/services" },
+                { text: "Hizmetlerimizi İnceleyin", href: "/cerceveleme-merkezi" },
                 { text: "Teklif Al", href: "#contact" },
             ]}
             slides={[
@@ -72,6 +72,7 @@ export default function LandingPage() {
                 { title: "Kanvas Şase İmalatı", description: "Dayanıklı fırınlanmış ahşap şase üretimi.", items: [{ icon: Ruler, text: "Özel ölçü imalat" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg" }, reverse: true },
                 { title: "Şövale", description: "Profesyonel şövale satış ve kiralama.", items: [{ icon: Palette, text: "Sergi ve atölye modelleri" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=2" }, reverse: false },
             ]}
+            buttons={[{ text: "Çerçeveleme Merkezi", href: "/cerceveleme-merkezi" }]}
             />
         </div>
 
