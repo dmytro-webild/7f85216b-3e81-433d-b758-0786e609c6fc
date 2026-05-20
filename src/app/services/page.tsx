@@ -40,8 +40,6 @@ export default function ServicesPage() {
             <NavbarStyleFullscreen
               navItems={navItems}
               brandName="Deniz Çerçeve"
-              button={{ text: "İletişim", href: "#contact" }}
-              className="[&_a]:text-[13px] [&_a]:leading-[50px] [&_a]:block"
             />
         </div>
 
