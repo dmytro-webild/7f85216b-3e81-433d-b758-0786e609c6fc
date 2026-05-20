@@ -6,14 +6,14 @@ import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
-import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
+import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
 import { Image, Phone, MessageCircle, MapPin, Palette, Ruler } from "lucide-react";
 
 export default function LandingPage() {
   const navItems = [
     { name: "Anasayfa", id: "/" },
-    { name: "Hizmetler", id: "/services" },
+    { name: "Çerçeveleme Merkezi", id: "/services" },
     { name: "Tuval", id: "/tuval" },
     { name: "Kanvas Tablo Mağazası", id: "/ankara-kanvas-tablo" },
     { name: "Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
@@ -36,7 +36,7 @@ export default function LandingPage() {
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-            <NavbarLayoutFloatingInline
+            <NavbarStyleFullscreen
               navItems={navItems}
               brandName="Deniz Çerçeve"
               button={{ text: "Teklif Al", href: "/services" }}
