@@ -40,7 +40,6 @@ export default function ServicesPage() {
           navItems={navItems}
           brandName="Deniz Çerçeve"
           button={{ text: "İletişim", href: "#contact" }}
-          className="[&_.mobile-menu]:!fixed [&_.mobile-menu]:!inset-0 [&_.mobile-menu]:!bg-background [&_.mobile-menu]:!p-5 [&_.mobile-menu]:!max-h-[80vh] [&_.mobile-menu]:!overflow-y-auto [&_.mobile-menu_a]:!text-[18px] [&_.mobile-menu_a]:!font-medium [&_.mobile-menu_a]:!leading-[1.3] [&_.mobile-menu_a]:!py-3 [&_.mobile-menu_a]:!h-[44px]"
         />
 
         <div id="hero">
