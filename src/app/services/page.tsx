@@ -32,6 +32,7 @@ export default function ServicesPage() {
             { name: "İletişim", id: "#contact" },
           ]}
           brandName="Deniz Çerçeve"
+          button={{ text: "İletişim", href: "#contact" }}
         />
         <HeroCarouselLogo
             logoText="Profesyonel Hizmetlerimiz"
