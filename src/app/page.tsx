@@ -7,7 +7,7 @@ import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
-import { Image, Phone, MessageCircle, MapPin, Instagram } from "lucide-react";
+import { Image, Phone, MessageCircle, MapPin } from "lucide-react";
 
 export default function LandingPage() {
   return (
