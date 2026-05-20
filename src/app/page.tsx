@@ -61,7 +61,7 @@ export default function LandingPage() {
             features={[
                 {
                 title: "Çerçeveleme",                description: "Özel ölçü tablo ve fotoğraf çerçeveleme.",                items: [{ icon: Image, text: "Resim, tablo, puzzle, diploma çerçeveleri" }],
-                media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg", imageAlt: "Çerçeve" },
+                media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg?_wi=2", imageAlt: "Çerçeve" },
                 reverse: false,
                 },
             ]}
