@@ -7,11 +7,10 @@ import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
-import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
+import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactText from '@/components/sections/contact/ContactText';
-import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCardFive';
-import { Image, Phone, MessageCircle, MapPin, Palette, Ruler, Star, Mail, Clock } from "lucide-react";
+import { Image, Phone, MessageCircle, MapPin, Palette, Star } from "lucide-react";
 
 export default function LandingPage() {
   const navItems = [
@@ -77,6 +76,7 @@ export default function LandingPage() {
             description="Atölyemizden seçilmiş çalışmalar."
             animationType="slide-up"
             textboxLayout="default"
+            useInvertedBackground={false}
             features={[]}
           />
         </div>
@@ -101,6 +101,7 @@ export default function LandingPage() {
                 description="Hizmetlerimizle ilgili merak ettiğiniz detaylar."
                 faqsAnimation="slide-up"
                 textboxLayout="split"
+                useInvertedBackground={true}
                 faqs={[
                     { id: "f1", title: "Özel ölçü imalat yapıyor musunuz?", content: "Evet, tüm çerçeve ve şase ürünlerimizde özel ölçü imalatımız bulunmaktadır." },
                     { id: "f2", title: "Teslimat süresi ne kadar?", content: "Genel olarak sipariş yoğunluğuna göre 3-7 iş günü içerisinde teslimat sağlıyoruz." },
@@ -128,6 +129,7 @@ export default function LandingPage() {
         <div id="contact" data-section="contact">
           <ContactText 
             text="Adres: Yenimahalle, Ankara | Telefon: 0312 397 48 49 | E-posta: info@denizcerceve.com | Çalışma Saatleri: 09:00-19:00"
+            useInvertedBackground={false}
             background={{ variant: "plain" }}
           />
         </div>
