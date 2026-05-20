@@ -36,15 +36,13 @@ export default function ServicesPage() {
         headingFontWeight="normal"
     >
       <ReactLenis root>
-        <div id="nav" data-section="nav">
-            <NavbarStyleFullscreen
-              navItems={navItems}
-              brandName="Deniz Çerçeve"
-              button={{ text: "İletişim", href: "#contact" }}
-            />
-        </div>
+        <NavbarStyleFullscreen
+          navItems={navItems}
+          brandName="Deniz Çerçeve"
+          button={{ text: "İletişim", href: "#contact" }}
+        />
 
-        <div id="hero" data-section="hero">
+        <div id="hero">
           <HeroCarouselLogo
               logoText="Ankara’da Resim ve Tablo Çerçeveleme Merkezi"
               description="Yenimahalle ve çevresinde sanat eserlerinize değer katıyor, profesyonel çerçeveleme ve şase üretim hizmetlerimizle estetiği ön planda tutuyoruz."
@@ -53,7 +51,7 @@ export default function ServicesPage() {
           />
         </div>
 
-        <div id="framing-expertise" data-section="services">
+        <div id="framing-expertise">
           <FeatureCardTen
             title="Uzmanlık Alanlarımız"
             description="Ankara'da çerçeveleme sanatını tecrübemizle birleştiriyoruz."
@@ -67,7 +65,7 @@ export default function ServicesPage() {
           />
         </div>
 
-        <div id="workflow" data-section="services">
+        <div id="workflow">
             <TimelineProcessFlow
               title="4 Adımda Çerçeveleme"
               description="Süreci nasıl yönettiğimizi keşfedin."
@@ -82,7 +80,7 @@ export default function ServicesPage() {
             />
         </div>
 
-        <div id="faq" data-section="services">
+        <div id="faq">
           <FaqSplitMedia
             title="Sıkça Sorulan Sorular"
             description="Çerçeveleme süreci hakkında bilmeniz gerekenler."
@@ -97,7 +95,7 @@ export default function ServicesPage() {
           />
         </div>
 
-        <div id="contact" data-section="contact-teklif">
+        <div id="contact">
           <ContactCTA
               tag="Bize Ulaşın"
               title="Hemen Teklif Alın"
@@ -108,14 +106,12 @@ export default function ServicesPage() {
           />
         </div>
 
-        <div id="footer" data-section="footer">
-          <FooterBase
-            columns={[
-                { title: "Menü", items: navItems.map(n => ({ label: n.name, href: n.id })) },
-            ]}
-            logoText="Deniz Çerçeve"
-          />
-        </div>
+        <FooterBase
+          columns={[
+            { title: "Menü", items: navItems.map(n => ({ label: n.name, href: n.id })) },
+          ]}
+          logoText="Deniz Çerçeve"
+        />
       </ReactLenis>
     </ThemeProvider>
   );
