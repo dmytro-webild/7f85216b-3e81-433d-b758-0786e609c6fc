@@ -31,6 +31,7 @@ export default function ServicesPage() {
             { name: "Anasayfa", id: "/" },
             { name: "Hizmetler", id: "/services" },
             { name: "Tuval", id: "/tuval" },
+            { name: "Kanvas", id: "/ankara-kanvas-tablo" },
             { name: "İletişim", id: "#contact" },
           ]}
           brandName="Deniz Çerçeve"
@@ -103,7 +104,7 @@ export default function ServicesPage() {
 
         <FooterBase
           columns={[
-            { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "Tuval", href: "/tuval" }, { label: "İletişim", href: "#contact" }] },
+            { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "Tuval", href: "/tuval" }, { label: "Kanvas", href: "/ankara-kanvas-tablo" }, { label: "İletişim", href: "#contact" }] },
           ]}
           logoText="Deniz Çerçeve"
         />
