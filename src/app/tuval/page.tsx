@@ -52,7 +52,7 @@ export default function TuvalServicePage() {
                 { text: "Yol Tarifi Al", href: "https://maps.google.com" },
                 { text: "Teklif Al", href: "#contact-teklif" }
             ]}
-            slides={[{ imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg?_wi=1", imageAlt: "Premium Tuval" }]}
+            slides={[{ imageSrc: "https://img.b2bpic.net/premium-photo/blank-white-canvas-minimalist-neutral-easel_53876-1065131.jpg?id=417219194", imageAlt: "Premium Tuval" }]}
             />
         </div>
 
