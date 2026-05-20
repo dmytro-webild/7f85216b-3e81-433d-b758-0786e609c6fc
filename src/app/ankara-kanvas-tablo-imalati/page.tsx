@@ -60,7 +60,7 @@ export default function BulkCanvasProduction() {
             title="Neden Profesyonel Şase?"
             description="Kaliteli üretim standartlarımız."
             features={[
-                { title: "Fırınlanmış Gürgen", description: "Zamanla yamulma yapmayan, dayanıklı fırınlanmış ahşap.", items: [{ icon: Ruler, text: "Standart ve özel ölçü" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg" }, reverse: false },
+                { title: "Fırınlanmış Gürgen", description: "Zamanla yamulma yapmayan, dayanıklı fırınlanmış ahşap.", items: [{ icon: Ruler, text: "Standart ve özel ölçü" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=2" }, reverse: false },
                 { title: "Kalite Garantisi", description: "Sanatçılar için ideal gerginlik ve pürüzsüz yüzey.", items: [{ icon: Award, text: "Uzun ömürlü yapı" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg" }, reverse: true },
             ]}
             />
