@@ -64,7 +64,7 @@ export default function SovalePage() {
             features={[
                 { title: "Masaüstü Şövaleler", description: "Küçük ebatlı çalışmalar ve başlangıç seviyesi için ideal, hafif ve pratik çözümler.", items: [{ icon: Brush, text: "Ergonomik tasarım" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg?_wi=1" }, reverse: false },
                 { title: "Atölye Şövaleleri", description: "Profesyonel çalışmalarınız için sağlam yapılı, ayarlanabilir profesyonel atölye şövaleleri.", items: [{ icon: Brush, text: "Yüksek stabilite" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=1" }, reverse: true },
-                { title: "Sergi Şövaleleri", description: "Sergilerinizde tablolarınızı şık bir şekilde sunmanızı sağlayacak dekoratif ve gösterişli modeller.", items: [{ icon: Brush, text: "Sergiye uygun estetik" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg" }, reverse: false },
+                { title: "Sergi Şövaleleri", description: "Sergilerinizde tablolarınızı şık bir şekilde sunmanızı sağlayacak dekoratif ve gösterişli modeller.", items: [{ icon: Brush, text: "Sergiye uygun estetik" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=1" }, reverse: false },
             ]}
             />
         </div>
