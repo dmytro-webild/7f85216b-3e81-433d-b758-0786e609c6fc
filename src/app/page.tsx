@@ -40,6 +40,7 @@ export default function LandingPage() {
               navItems={navItems}
               brandName="Deniz Çerçeve"
               button={{ text: "Teklif Al", href: "/services" }}
+              className="[&_a]:text-[13px] [&_a]:leading-[50px] [&_a]:block"
             />
         </div>
 
