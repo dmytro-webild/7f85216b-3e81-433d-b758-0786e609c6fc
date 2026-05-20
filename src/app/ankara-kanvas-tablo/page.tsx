@@ -7,7 +7,7 @@ import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCa
 import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Palette, Ruler, ShoppingCart, Image, Star } from "lucide-react";
+import { Palette, Ruler, Image } from "lucide-react";
 
 export default function CanvasPage() {
   return (
@@ -31,6 +31,7 @@ export default function CanvasPage() {
                 { name: "Hizmetler", id: "/services" },
                 { name: "Tuval", id: "/tuval" },
                 { name: "Kanvas", id: "/ankara-kanvas-tablo" },
+                { name: "Kanvas İmalatı", id: "/ankara-kanvas-tablo-imalati" },
                 { name: "İletişim", id: "#contact" },
             ]}
             brandName="Deniz Çerçeve"
@@ -96,7 +97,7 @@ export default function CanvasPage() {
         <div id="footer" data-section="footer">
             <FooterBase
             columns={[
-                { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "Kanvas", href: "/ankara-kanvas-tablo" }, { label: "İletişim", href: "#contact" }] },
+                { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "Kanvas", href: "/ankara-kanvas-tablo" }, { label: "Kanvas İmalatı", href: "/ankara-kanvas-tablo-imalati" }, { label: "İletişim", href: "#contact" }] },
                 { title: "İletişim", items: [{ label: "0312 397 48 49", href: "tel:+903123974849" }] },
             ]}
             logoText="Deniz Çerçeve"
