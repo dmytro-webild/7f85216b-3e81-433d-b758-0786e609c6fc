@@ -31,6 +31,7 @@ export default function TuvalPage() {
             { name: "Tuval", id: "/tuval" },
             { name: "Kanvas", id: "/ankara-kanvas-tablo" },
             { name: "Kanvas İmalatı", id: "/ankara-kanvas-tablo-imalati" },
+            { name: "Ankara’da Şövale Satışı ve Kiralama", id: "/ankara-sovale-satis-kiralama" },
             { name: "İletişim", id: "#contact" },
           ]}
           brandName="Deniz Çerçeve"
@@ -107,7 +108,7 @@ export default function TuvalPage() {
 
         <FooterBase
           columns={[
-            { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "Tuval", href: "/tuval" }, { label: "Kanvas", href: "/ankara-kanvas-tablo" }, { label: "Kanvas İmalatı", href: "/ankara-kanvas-tablo-imalati" }, { label: "İletişim", href: "#contact" }] },
+            { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "Tuval", href: "/tuval" }, { label: "Kanvas", href: "/ankara-kanvas-tablo" }, { label: "Kanvas İmalatı", href: "/ankara-kanvas-tablo-imalati" }, { label: "Ankara’da Şövale Satışı ve Kiralama", href: "/ankara-sovale-satis-kiralama" }, { label: "İletişim", href: "#contact" }] },
           ]}
           logoText="Deniz Çerçeve"
         />
