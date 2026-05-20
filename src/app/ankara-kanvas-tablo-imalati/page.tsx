@@ -32,6 +32,7 @@ export default function BulkCanvasProduction() {
                 { name: "Hizmetler", id: "/services" },
                 { name: "Tuval", id: "/tuval" },
                 { name: "Ankara’da Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
+                { name: "Ankara’da Şövale Satışı ve Kiralama", id: "/ankara-sovale-satis-kiralama" },
                 { name: "İletişim", id: "#contact" },
             ]}
             brandName="Deniz Çerçeve"
@@ -96,7 +97,7 @@ export default function BulkCanvasProduction() {
         <div id="footer" data-section="footer">
             <FooterBase
             columns={[
-                { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Ankara’da Kanvas Şase İmalatı", href: "/ankara-kanvas-tablo-imalati" }, { label: "İletişim", href: "#contact" }] },
+                { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Ankara’da Kanvas Şase İmalatı", href: "/ankara-kanvas-tablo-imalati" }, { label: "Ankara’da Şövale Satışı ve Kiralama", href: "/ankara-sovale-satis-kiralama" }, { label: "İletişim", href: "#contact" }] },
                 { title: "İletişim", items: [{ label: "0312 397 48 49", href: "tel:+903123974849" }] },
             ]}
             logoText="Deniz Çerçeve"
