@@ -38,8 +38,6 @@ export default function CanvasPage() {
             <NavbarStyleFullscreen
               navItems={navItems}
               brandName="Deniz Çerçeve"
-              button={{ text: "Teklif Al", href: "#contact" }}
-              className="[&_a]:text-[13px] [&_a]:leading-[50px] [&_a]:block"
             />
         </div>
 
@@ -86,8 +84,6 @@ export default function CanvasPage() {
 
         <div id="contact" data-section="contact-teklif">
             <ContactCTA
-            useInvertedBackground={true}
-            background={{ variant: "sparkles-gradient" }}
             tag="İletişim"
             title="Mağazamızı Ziyaret Edin"
             description="Ankara Yenimahalle’deki atölyemizde kanvas tablolarımızı yerinde inceleyebilir, özel siparişlerinizi verebilirsiniz."
@@ -95,6 +91,8 @@ export default function CanvasPage() {
                 { text: "Yol Tarifi", href: "https://maps.google.com" },
                 { text: "WhatsApp", href: "https://wa.me/903123974849" }
             ]}
+            background={{ variant: "sparkles-gradient" }}
+            useInvertedBackground={true}
             />
         </div>
 
