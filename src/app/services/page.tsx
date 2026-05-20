@@ -58,7 +58,7 @@ export default function ServicesPage() {
             useInvertedBackground={true}
             features={[
                 { title: "Sanatsal Çerçeveleme", description: "Değerli tablolarınız için özel tasarımlar.", items: [{ icon: Palette, text: "Sanat eseri koruma" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=2" }, reverse: false },
-                { title: "Özel Ölçü Üretim", description: "İhtiyacınıza göre milimetrik kesim ve montaj.", items: [{ icon: Ruler, text: "Hassas ölçüm teknolojisi" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg" }, reverse: true }
+                { title: "Özel Ölçü Üretim", description: "İhtiyacınıza göre milimetrik kesim ve montaj.", items: [{ icon: Ruler, text: "Hassas ölçüm teknolojisi" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=3" }, reverse: true }
             ]}
           />
         </div>
