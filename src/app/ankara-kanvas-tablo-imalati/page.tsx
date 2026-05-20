@@ -39,6 +39,7 @@ export default function BulkCanvasProduction() {
             <NavbarStyleFullscreen
               navItems={navItems}
               brandName="Deniz Çerçeve"
+              button={{ text: "Teklif Al", href: "#contact" }}
             />
         </div>
 
@@ -84,6 +85,8 @@ export default function BulkCanvasProduction() {
 
         <div id="contact-teklif" data-section="contact-teklif">
             <ContactCTA
+            useInvertedBackground={true}
+            background={{ variant: "sparkles-gradient" }}
             tag="İletişim"
             title="İşbirliği İçin Bize Ulaşın"
             description="Ankara Yenimahalle’deki atölyemizde kanvas şaselerimizi yerinde inceleyin veya projeniz için teklif alın."
@@ -91,8 +94,6 @@ export default function BulkCanvasProduction() {
                 { text: "WhatsApp", href: "https://wa.me/903123974849" },
                 { text: "Yol Tarifi", href: "https://maps.google.com" }
             ]}
-            background={{ variant: "sparkles-gradient" }}
-            useInvertedBackground={true}
             />
         </div>
 
