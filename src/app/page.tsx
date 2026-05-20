@@ -61,7 +61,7 @@ export default function LandingPage() {
       ]}
       slides={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg?_wi=1",
           imageAlt: "Çerçeveleme atölyesi",
         },
         {
@@ -108,7 +108,7 @@ export default function LandingPage() {
             imageAlt: "Çerçeve",
           },
           reverse: false,
-          imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg?_wi=2",
           imageAlt: "diverse picture frames on wall",
         },
         {
@@ -125,7 +125,7 @@ export default function LandingPage() {
             imageAlt: "Tuval",
           },
           reverse: true,
-          imageSrc: "http://img.b2bpic.net/free-photo/high-angle-artisan-jobs-equipment-assortment_23-2148732419.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/high-angle-artisan-jobs-equipment-assortment_23-2148732419.jpg?_wi=1",
           imageAlt: "diverse picture frames on wall",
         },
         {
@@ -142,7 +142,7 @@ export default function LandingPage() {
             imageAlt: "Şövale",
           },
           reverse: false,
-          imageSrc: "http://img.b2bpic.net/free-photo/flirty-couple-attending-art-workshop-having-fun-together-while-dating_662251-328.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/flirty-couple-attending-art-workshop-having-fun-together-while-dating_662251-328.jpg?_wi=1",
           imageAlt: "diverse picture frames on wall",
         },
       ]}
@@ -170,7 +170,7 @@ export default function LandingPage() {
           title: "Üretim",
         },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/high-angle-artisan-jobs-equipment-assortment_23-2148732419.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/high-angle-artisan-jobs-equipment-assortment_23-2148732419.jpg?_wi=2"
       imageAlt="Usta işçilik"
       mediaAnimation="blur-reveal"
       metricsAnimation="slide-up"
@@ -282,7 +282,7 @@ export default function LandingPage() {
           name: "Emre G.",
           role: "Müşteri",
           testimonial: "Kanvas şaselerim her zaman sağlam geliyor.",
-          imageSrc: "http://img.b2bpic.net/free-photo/flirty-couple-attending-art-workshop-having-fun-together-while-dating_662251-328.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/flirty-couple-attending-art-workshop-having-fun-together-while-dating_662251-328.jpg?_wi=2",
         },
       ]}
       title="Müşterilerimiz Neler Diyor?"
