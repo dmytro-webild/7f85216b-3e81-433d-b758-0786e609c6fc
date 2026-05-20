@@ -34,15 +34,13 @@ export default function TuvalPage() {
         headingFontWeight="normal"
     >
       <ReactLenis root>
-        <div id="nav" data-section="nav">
-            <NavbarStyleFullscreen
-              navItems={navItems}
-              brandName="Deniz Çerçeve"
-              button={{ text: "Teklif Al", href: "#contact" }}
-            />
-        </div>
+        <NavbarStyleFullscreen
+          navItems={navItems}
+          brandName="Deniz Çerçeve"
+          button={{ text: "Teklif Al", href: "#contact" }}
+        />
 
-        <div id="hero" data-section="hero">
+        <div id="hero">
           <HeroCarouselLogo
               logoText="Tuval Üretim Merkezi"
               description="Sanatçılar, okullar ve atölyeler için 1. sınıf malzemelerle, sağlam ahşap şaseli tuval üretiminde Ankara’nın öncüsü."
@@ -56,7 +54,7 @@ export default function TuvalPage() {
           />
         </div>
 
-        <div id="products" data-section="services">
+        <div id="products">
           <FeatureCardTen
             title="Tuval Çeşitlerimiz"
             description="Her ihtiyaca özel tuval çözümleri sunuyoruz."
@@ -70,7 +68,7 @@ export default function TuvalPage() {
           />
         </div>
 
-        <div id="quality" data-section="services">
+        <div id="quality">
           <FeatureCardTen
             title="Kalite Standartları"
             description="Ürünlerimizde uzun ömürlülük ve dayanıklılık önceliğimizdir."
@@ -83,7 +81,7 @@ export default function TuvalPage() {
           />
         </div>
 
-        <div id="audience" data-section="services">
+        <div id="audience">
           <FeatureCardTen
             title="Kimin İçin?"
             description="Toplu alımlar ve atölye ihtiyaçları için çözümler."
@@ -96,7 +94,7 @@ export default function TuvalPage() {
           />
         </div>
 
-        <div id="contact" data-section="contact-teklif">
+        <div id="contact">
           <ContactCTA
               tag="Sipariş"
               title="Özel Ölçü Teklifi Alın"
@@ -110,14 +108,12 @@ export default function TuvalPage() {
           />
         </div>
 
-        <div id="footer" data-section="footer">
-          <FooterBase
-            columns={[
-                { title: "Menü", items: navItems.map(n => ({ label: n.name, href: n.id })) },
-            ]}
-            logoText="Deniz Çerçeve"
-          />
-        </div>
+        <FooterBase
+          columns={[
+            { title: "Menü", items: navItems.map(n => ({ label: n.name, href: n.id })) },
+          ]}
+          logoText="Deniz Çerçeve"
+        />
       </ReactLenis>
     </ThemeProvider>
   );
