@@ -34,14 +34,15 @@ export default function TuvalPage() {
         headingFontWeight="normal"
     >
       <ReactLenis root>
-        <NavbarStyleFullscreen
-          navItems={navItems}
-          brandName="Deniz Çerçeve"
-          button={{ text: "Teklif Al", href: "#contact" }}
-          className="[&_a]:text-[18px] md:[&_a]:text-[20px] [&_a]:leading-[1.4] [&_li]:py-[16px]"
-        />
+        <div id="nav" data-section="nav">
+            <NavbarStyleFullscreen
+              navItems={navItems}
+              brandName="Deniz Çerçeve"
+              button={{ text: "Teklif Al", href: "#contact" }}
+            />
+        </div>
 
-        <div id="hero">
+        <div id="hero" data-section="hero">
           <HeroCarouselLogo
               logoText="Tuval Üretim Merkezi"
               description="Sanatçılar, okullar ve atölyeler için 1. sınıf malzemelerle, sağlam ahşap şaseli tuval üretiminde Ankara’nın öncüsü."
@@ -55,7 +56,7 @@ export default function TuvalPage() {
           />
         </div>
 
-        <div id="products">
+        <div id="products" data-section="services">
           <FeatureCardTen
             title="Tuval Çeşitlerimiz"
             description="Her ihtiyaca özel tuval çözümleri sunuyoruz."
@@ -69,7 +70,7 @@ export default function TuvalPage() {
           />
         </div>
 
-        <div id="quality">
+        <div id="quality" data-section="services">
           <FeatureCardTen
             title="Kalite Standartları"
             description="Ürünlerimizde uzun ömürlülük ve dayanıklılık önceliğimizdir."
@@ -82,7 +83,7 @@ export default function TuvalPage() {
           />
         </div>
 
-        <div id="audience">
+        <div id="audience" data-section="services">
           <FeatureCardTen
             title="Kimin İçin?"
             description="Toplu alımlar ve atölye ihtiyaçları için çözümler."
@@ -95,7 +96,7 @@ export default function TuvalPage() {
           />
         </div>
 
-        <div id="contact">
+        <div id="contact" data-section="contact-teklif">
           <ContactCTA
               tag="Sipariş"
               title="Özel Ölçü Teklifi Alın"
@@ -109,12 +110,14 @@ export default function TuvalPage() {
           />
         </div>
 
-        <FooterBase
-          columns={[
-            { title: "Menü", items: navItems.map(n => ({ label: n.name, href: n.id })) },
-          ]}
-          logoText="Deniz Çerçeve"
-        />
+        <div id="footer" data-section="footer">
+          <FooterBase
+            columns={[
+                { title: "Menü", items: navItems.map(n => ({ label: n.name, href: n.id })) },
+            ]}
+            logoText="Deniz Çerçeve"
+          />
+        </div>
       </ReactLenis>
     </ThemeProvider>
   );
