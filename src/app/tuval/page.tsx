@@ -9,7 +9,7 @@ import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCar
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import { Phone, MessageCircle, MapPin, Palette, Ruler, ShoppingCart, Info, Award } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Ruler, Award } from "lucide-react";
 
 export default function TuvalServicePage() {
   const navItems = [
@@ -86,6 +86,7 @@ export default function TuvalServicePage() {
         <div id="faq" data-section="faq">
             <FaqDouble
             title="Sıkça Sorulan Sorular"
+            description="Tuval üretim sürecimizle ilgili merak edilenler."
             faqsAnimation="slide-up"
             textboxLayout="split"
             useInvertedBackground={true}
