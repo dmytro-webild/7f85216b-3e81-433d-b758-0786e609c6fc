@@ -12,13 +12,13 @@ import { Image, Phone, MessageCircle, MapPin, Palette, Ruler } from "lucide-reac
 
 export default function LandingPage() {
   const navItems = [
-    { name: "Anasayfa", id: "/" },
-    { name: "Hizmetler", id: "/services" },
-    { name: "Tuval", id: "/tuval" },
-    { name: "Kanvas Tablo Mağazası", id: "/ankara-kanvas-tablo" },
-    { name: "Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
-    { name: "Şövale", id: "/ankara-sovale-satis-kiralama" },
-    { name: "İletişim", id: "#contact" },
+    { label: "Anasayfa", href: "/" },
+    { label: "Hizmetler", href: "/services" },
+    { label: "Tuval", href: "/tuval" },
+    { label: "Kanvas Tablo Mağazası", href: "/ankara-kanvas-tablo" },
+    { label: "Kanvas Şase İmalatı", href: "/ankara-kanvas-tablo-imalati" },
+    { label: "Şövale", href: "/ankara-sovale-satis-kiralama" },
+    { label: "İletişim", href: "#contact" },
   ];
 
   return (
@@ -37,7 +37,7 @@ export default function LandingPage() {
       <ReactLenis root>
         <div id="nav" data-section="nav">
             <NavbarLayoutFloatingInline
-            navItems={navItems}
+            links={navItems}
             brandName="Deniz Çerçeve"
             button={{ text: "Teklif Al", href: "/services" }}
             />
@@ -78,6 +78,7 @@ export default function LandingPage() {
         <div id="testimonials" data-section="testimonials">
             <TestimonialCardTen
                 title="Müşterilerimiz Neler Diyor?"
+                description="Müşterilerimizin deniz çerçeve hakkındaki yorumları."
                 textboxLayout="split"
                 useInvertedBackground={false}
                 testimonials={[
