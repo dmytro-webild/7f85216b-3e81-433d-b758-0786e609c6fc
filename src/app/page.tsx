@@ -12,13 +12,13 @@ import { Image, Phone, MessageCircle, MapPin, Palette, Ruler } from "lucide-reac
 
 export default function LandingPage() {
   const navItems = [
-    { label: "Anasayfa", href: "/" },
-    { label: "Hizmetler", href: "/services" },
-    { label: "Tuval", href: "/tuval" },
-    { label: "Kanvas Tablo Mağazası", href: "/ankara-kanvas-tablo" },
-    { label: "Kanvas Şase İmalatı", href: "/ankara-kanvas-tablo-imalati" },
-    { label: "Şövale", href: "/ankara-sovale-satis-kiralama" },
-    { label: "İletişim", href: "#contact" },
+    { name: "Anasayfa", id: "/" },
+    { name: "Hizmetler", id: "/services" },
+    { name: "Tuval", id: "/tuval" },
+    { name: "Kanvas Tablo Mağazası", id: "/ankara-kanvas-tablo" },
+    { name: "Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
+    { name: "Şövale", id: "/ankara-sovale-satis-kiralama" },
+    { name: "İletişim", id: "#contact" },
   ];
 
   return (
@@ -108,7 +108,7 @@ export default function LandingPage() {
         <div id="footer" data-section="footer">
             <FooterBase
             columns={[
-                { title: "Menü", items: navItems },
+                { title: "Menü", items: navItems.map(n => ({ label: n.name, href: n.id })) },
                 { title: "İletişim", items: [{ label: "0312 397 48 49", href: "tel:+903123974849" }] },
             ]}
             logoText="Deniz Çerçeve"
