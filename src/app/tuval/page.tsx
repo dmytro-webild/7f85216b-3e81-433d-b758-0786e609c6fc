@@ -60,7 +60,7 @@ export default function TuvalPage() {
             animationType="slide-up"
             useInvertedBackground={true}
             features={[
-                { title: "Standart & Siyah Tuval", description: "Sanatçılar için ideal yüzey kalitesi.", items: [{ icon: Palette, text: "Standart tuval, Siyah tuval" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg" }, reverse: false },
+                { title: "Standart & Siyah Tuval", description: "Sanatçılar için ideal yüzey kalitesi.", items: [{ icon: Palette, text: "Standart tuval, Siyah tuval" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg?_wi=2" }, reverse: false },
                 { title: "Duble, Parçalı & Özel Ölçü", description: "Yaratıcılığınızı sınırlandırmayın, özel ölçülerle çalışıyoruz.", items: [{ icon: Ruler, text: "Duble tuval, Parçalı tuval, Özel ölçü" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/artist-studio-with-paintings_23-2148906919.jpg" }, reverse: true }
             ]}
           />
@@ -87,7 +87,7 @@ export default function TuvalPage() {
             animationType="slide-up"
             useInvertedBackground={true}
             features={[
-                { title: "Profesyonel Çözümler", description: "Sanatçıdan okula, toplu alımlara kadar geniş hizmet yelpazesi.", items: [{ icon: ShoppingCart, text: "Sanatçı, Öğrenci, Atölye, Okul, Toplu Alım" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/artist-painting-art-class_23-2149175240.jpg" }, reverse: true }
+                { title: "Profesyonel Çözümler", description: "Sanatçıdan okula, toplu alımlara kadar geniş hizmet yelpazesi.", items: [{ icon: ShoppingCart, text: "Sanatçı, Öğrenci, Atölye, Okul, Toplu Alım" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/artist-painting-art-class_23-2149175240.jpg?_wi=2" }, reverse: true }
             ]}
           />
         </div>
