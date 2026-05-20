@@ -50,7 +50,7 @@ export default function CercevelemeMerkeziPage() {
                 { text: "Teklif Al", href: "#contact" },
                 { text: "Hizmetleri İncele", href: "#services" }
             ]}
-            slides={[{ imageSrc: "https://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg?_wi=2", imageAlt: "Profesyonel Çerçeveleme Merkezi" }]}
+            slides={[{ imageSrc: "https://img.b2bpic.net/premium-photo/embrace-grandeur-captivating-32-large-painting-frames_1000124-165751.jpg?id=161980470", imageAlt: "Profesyonel Çerçeveleme Merkezi" }]}
             />
         </div>
 
