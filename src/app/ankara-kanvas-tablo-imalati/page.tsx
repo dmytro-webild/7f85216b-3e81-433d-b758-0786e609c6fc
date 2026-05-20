@@ -14,7 +14,7 @@ import { Ruler, Award, Phone, MessageCircle, MapPin } from "lucide-react";
 export default function KanvasSaseImalatiPage() {
   const navItems = [
     { name: "Anasayfa", id: "/" },
-    { name: "Çerçeveleme Merkezi", id: "/services" },
+    { name: "Çerçeveleme Merkezi", id: "/cerceveleme-merkezi" },
     { name: "Tuval", id: "/tuval" },
     { name: "Kanvas Tablo Mağazası", id: "/ankara-kanvas-tablo" },
     { name: "Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
