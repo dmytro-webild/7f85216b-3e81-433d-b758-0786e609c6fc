@@ -61,7 +61,7 @@ export default function CanvasPage() {
             description="Her mekâna uygun sanatsal dokunuşlar."
             features={[
                 { title: "Manzara Kanvaslar", description: "Doğanın huzuru duvarlarınızda.", items: [{ icon: Image, text: "Yüksek çözünürlüklü baskı" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=1" }, reverse: false },
-                { title: "Modern Sanat", description: "Çağdaş çizgilerle estetik dokunuşlar.", items: [{ icon: Palette, text: "Canlı renkler" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg" }, reverse: true },
+                { title: "Modern Sanat", description: "Çağdaş çizgilerle estetik dokunuşlar.", items: [{ icon: Palette, text: "Canlı renkler" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg?_wi=1" }, reverse: true },
             ]}
             />
         </div>
@@ -74,7 +74,7 @@ export default function CanvasPage() {
             title="Premium Kalite"
             description="Uzun ömürlü ve solmaya dayanıklı baskı teknolojisi."
             features={[
-                { title: "Dayanıklı Şase", description: "Fırınlanmış gürgen ağacından sağlam ahşap şaseler.", items: [{ icon: Ruler, text: "Gerçek ahşap çerçeve" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg" }, reverse: false },
+                { title: "Dayanıklı Şase", description: "Fırınlanmış gürgen ağacından sağlam ahşap şaseler.", items: [{ icon: Ruler, text: "Gerçek ahşap çerçeve" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg?_wi=1" }, reverse: false },
             ]}
             />
         </div>
