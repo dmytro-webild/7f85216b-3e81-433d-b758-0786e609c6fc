@@ -80,6 +80,7 @@ export default function ServicesPage() {
             description="Çerçeveleme süreci hakkında bilmeniz gerekenler."
             faqsAnimation="slide-up"
             textboxLayout="split"
+            useInvertedBackground={false}
             faqs={[
                 { id: "q1", title: "Özel ölçü çalışıyor musunuz?", content: "Evet, Ankara'daki merkezimizde her boyutta tablo ve fotoğraf için özel ölçü çerçeveleme yapıyoruz." },
                 { id: "q2", title: "Fiyatlar neye göre belirlenir?", content: "Çerçeve profili, kullanılan cam tipi ve emeğe göre uygun fiyatlandırma sunuyoruz." },
@@ -95,6 +96,7 @@ export default function ServicesPage() {
               description="Ankara Yenimahalle’deki atölyemizde eserlerinizi profesyonelce çerçeveliyoruz."
               buttons={[{ text: "WhatsApp Üzerinden Teklif Al", href: "https://wa.me/903123974849" }]}
               background={{ variant: "sparkles-gradient" }}
+              useInvertedBackground={false}
           />
         </div>
 
