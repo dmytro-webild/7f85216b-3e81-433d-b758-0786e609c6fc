@@ -42,7 +42,7 @@ export default function ServicesPage() {
               logoText="Ankara’da Resim ve Tablo Çerçeveleme Merkezi"
               description="Yenimahalle ve çevresinde sanat eserlerinize değer katıyor, profesyonel çerçeveleme ve şase üretim hizmetlerimizle estetiği ön planda tutuyoruz."
               buttons={[{ text: "Teklif Al", href: "#contact" }]}
-              slides={[{ imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg", imageAlt: "Profesyonel çerçeveleme" }]}
+              slides={[{ imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg?_wi=2", imageAlt: "Profesyonel çerçeveleme" }]}
           />
         </div>
 
@@ -54,7 +54,7 @@ export default function ServicesPage() {
             animationType="slide-up"
             useInvertedBackground={true}
             features={[
-                { title: "Sanatsal Çerçeveleme", description: "Değerli tablolarınız için özel tasarımlar.", items: [{ icon: Palette, text: "Sanat eseri koruma" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg" }, reverse: false },
+                { title: "Sanatsal Çerçeveleme", description: "Değerli tablolarınız için özel tasarımlar.", items: [{ icon: Palette, text: "Sanat eseri koruma" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=2" }, reverse: false },
                 { title: "Özel Ölçü Üretim", description: "İhtiyacınıza göre milimetrik kesim ve montaj.", items: [{ icon: Ruler, text: "Hassas ölçüm teknolojisi" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg" }, reverse: true }
             ]}
           />
