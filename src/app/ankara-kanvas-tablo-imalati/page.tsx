@@ -8,7 +8,7 @@ import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
-import { Ruler, Award, Palette, Info, MapPin } from "lucide-react";
+import { Ruler, Award } from "lucide-react";
 
 export default function BulkCanvasProduction() {
   return (
@@ -51,12 +51,13 @@ export default function BulkCanvasProduction() {
             />
         </div>
 
-        <div id="benefits" data-section="services">
+        <div id="services" data-section="services">
             <FeatureCardTen
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={true}
             title="Neden Profesyonel Şase?"
+            description="Kaliteli üretim standartlarımız."
             features={[
                 { title: "Fırınlanmış Gürgen", description: "Zamanla yamulma yapmayan, dayanıklı fırınlanmış ahşap.", items: [{ icon: Ruler, text: "Standart ve özel ölçü" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg" }, reverse: false },
                 { title: "Kalite Garantisi", description: "Sanatçılar için ideal gerginlik ve pürüzsüz yüzey.", items: [{ icon: Award, text: "Uzun ömürlü yapı" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg" }, reverse: true },
@@ -70,6 +71,7 @@ export default function BulkCanvasProduction() {
             description="Toplu üretim ve kalite standartlarımız hakkında bilgiler."
             faqsAnimation="slide-up"
             textboxLayout="split"
+            useInvertedBackground={false}
             faqs={[
                 { id: "q1", title: "Toplu alımlarda indirim yapıyor musunuz?", content: "Evet, kurumlar ve sanat atölyeleri için özel toplu alım fiyatları sunuyoruz." },
                 { id: "q2", title: "Özel ölçü üretim yapıyor musunuz?", content: "Ankara Yenimahalle atölyemizde istediğiniz her ölçüde kanvas şase üretebiliyoruz." },
@@ -77,7 +79,7 @@ export default function BulkCanvasProduction() {
             />
         </div>
 
-        <div id="contact" data-section="contact-teklif">
+        <div id="contact-teklif" data-section="contact-teklif">
             <ContactCTA
             useInvertedBackground={true}
             background={{ variant: "sparkles-gradient" }}
