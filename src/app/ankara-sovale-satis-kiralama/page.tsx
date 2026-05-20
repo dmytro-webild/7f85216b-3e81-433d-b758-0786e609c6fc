@@ -50,7 +50,7 @@ export default function SovalePage() {
                 { text: "Teklif Al", href: "#contact" },
                 { text: "Mağazayı Ziyaret Et", href: "#contact" }
             ]}
-            slides={[{ imageSrc: "https://img.b2bpic.net/premium-photo/blank-white-canvas-minimalist-neutral-easel_53876-1072255.jpg?id=417369544", imageAlt: "Şövale çeşitleri" }]}
+            slides={[{ imageSrc: "https://img.b2bpic.net/free-photo/full-shot-woman-holding-brush_23-2149050502.jpg?id=16693386", imageAlt: "Şövale çeşitleri" }]}
             />
         </div>
 
