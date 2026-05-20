@@ -39,6 +39,7 @@ export default function SovalePage() {
               navItems={navItems}
               brandName="Deniz Çerçeve"
               button={{ text: "Teklif Al", href: "#contact" }}
+              className="[&_a]:text-[18px] md:[&_a]:text-[20px] [&_a]:leading-[1.4] [&_li]:py-[16px]"
             />
         </div>
 
