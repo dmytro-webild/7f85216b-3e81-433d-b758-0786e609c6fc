@@ -5,19 +5,19 @@ import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
 import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
+import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
+import FaqDouble from '@/components/sections/faq/FaqDouble';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
-import FooterBase from '@/components/sections/footer/FooterBase';
-import { Palette, Ruler, ShoppingCart, Info } from "lucide-react";
+import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import { Phone, MessageCircle, MapPin, Palette, Ruler, ShoppingCart, Info, Award } from "lucide-react";
 
-export default function TuvalPage() {
+export default function TuvalServicePage() {
   const navItems = [
     { name: "Anasayfa", id: "/" },
     { name: "Çerçeveleme Merkezi", id: "/services" },
     { name: "Tuval", id: "/tuval" },
-    { name: "Kanvas Tablo Mağazası", id: "/ankara-kanvas-tablo" },
-    { name: "Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
-    { name: "Şövale", id: "/ankara-sovale-satis-kiralama" },
-    { name: "İletişim", id: "#contact" },
+    { name: "Kanvas Tablo", id: "/ankara-kanvas-tablo" },
+    { name: "İletişim", id: "#contact-teklif" },
   ];
 
   return (
@@ -34,86 +34,102 @@ export default function TuvalPage() {
         headingFontWeight="normal"
     >
       <ReactLenis root>
-        <NavbarStyleFullscreen
-          navItems={navItems}
-          brandName="Deniz Çerçeve"
-          button={{ text: "Teklif Al", href: "#contact" }}
-        />
+        <div id="nav" data-section="nav">
+            <NavbarStyleFullscreen
+              navItems={navItems}
+              brandName="Deniz Çerçeve"
+              button={{ text: "Teklif Al", href: "#contact-teklif" }}
+            />
+        </div>
 
-        <div id="hero">
-          <HeroCarouselLogo
-              logoText="Tuval Üretim Merkezi"
-              description="Sanatçılar, okullar ve atölyeler için 1. sınıf malzemelerle, sağlam ahşap şaseli tuval üretiminde Ankara’nın öncüsü."
-              buttons={[
+        <div id="hero" data-section="hero">
+            <HeroCarouselLogo
+            logoText="Premium Tuval ve Şase Üretimi"
+            description="Ankara'da sanatınıza değer katan, fırınlanmış ahşap şaseli ve yüksek kaliteli bez tuval üretim merkezi."
+            buttons={[
                 { text: "Hemen Ara", href: "tel:+903123974849" },
-                { text: "WhatsApp", href: "https://wa.me/903123974849" },
-                { text: "Yol Tarifi", href: "https://maps.google.com" },
-                { text: "Teklif İste", href: "#contact" }
-              ]}
-              slides={[{ imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg?_wi=2", imageAlt: "Kaliteli tuval" }]}
-          />
-        </div>
-
-        <div id="products">
-          <FeatureCardTen
-            title="Tuval Çeşitlerimiz"
-            description="Her ihtiyaca özel tuval çözümleri sunuyoruz."
-            textboxLayout="split"
-            animationType="slide-up"
-            useInvertedBackground={true}
-            features={[
-                { title: "Standart & Siyah Tuval", description: "Sanatçılar için ideal yüzey kalitesi.", items: [{ icon: Palette, text: "Standart tuval, Siyah tuval" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg?_wi=2" }, reverse: false },
-                { title: "Duble, Parçalı & Özel Ölçü", description: "Yaratıcılığınızı sınırlandırmayın, özel ölçülerle çalışıyoruz.", items: [{ icon: Ruler, text: "Duble tuval, Parçalı tuval, Özel ölçü" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/artist-studio-with-paintings_23-2148906919.jpg" }, reverse: true }
-            ]}
-          />
-        </div>
-
-        <div id="quality">
-          <FeatureCardTen
-            title="Kalite Standartları"
-            description="Ürünlerimizde uzun ömürlülük ve dayanıklılık önceliğimizdir."
-            textboxLayout="split"
-            animationType="slide-up"
-            useInvertedBackground={false}
-            features={[
-                { title: "Birinci Sınıf Malzeme", description: "En kaliteli bezler ve sağlam ahşap şaseler ile üretim.", items: [{ icon: Info, text: "1. Sınıf Bez, Sağlam Ahşap Şase, Düzgün Gergi" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-painter-working-studio_23-2148906912.jpg" }, reverse: false }
-            ]}
-          />
-        </div>
-
-        <div id="audience">
-          <FeatureCardTen
-            title="Kimin İçin?"
-            description="Toplu alımlar ve atölye ihtiyaçları için çözümler."
-            textboxLayout="split"
-            animationType="slide-up"
-            useInvertedBackground={true}
-            features={[
-                { title: "Profesyonel Çözümler", description: "Sanatçıdan okula, toplu alımlara kadar geniş hizmet yelpazesi.", items: [{ icon: ShoppingCart, text: "Sanatçı, Öğrenci, Atölye, Okul, Toplu Alım" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/artist-painting-art-class_23-2149175240.jpg?_wi=2" }, reverse: true }
-            ]}
-          />
-        </div>
-
-        <div id="contact">
-          <ContactCTA
-              tag="Sipariş"
-              title="Özel Ölçü Teklifi Alın"
-              description="Siparişleriniz için bizimle iletişime geçin. Online satış ve katalog entegrasyonu hazırlıklarımız sürmektedir, en kısa sürede size daha hızlı hizmet vereceğiz."
-              buttons={[
                 { text: "WhatsApp’tan Yaz", href: "https://wa.me/903123974849" },
-                { text: "Atölyemizi Ziyaret Edin", href: "https://maps.google.com" }
-              ]}
-              background={{ variant: "sparkles-gradient" }}
-              useInvertedBackground={false}
-          />
+                { text: "Yol Tarifi Al", href: "https://maps.google.com" },
+                { text: "Teklif Al", href: "#contact-teklif" }
+            ]}
+            slides={[{ imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg?_wi=1", imageAlt: "Premium Tuval" }]}
+            />
         </div>
 
-        <FooterBase
-          columns={[
-            { title: "Menü", items: navItems.map(n => ({ label: n.name, href: n.id })) },
-          ]}
-          logoText="Deniz Çerçeve"
-        />
+        <div id="services" data-section="services">
+            <FeatureCardTen
+            animationType="slide-up"
+            textboxLayout="split"
+            useInvertedBackground={true}
+            title="Tuval Çeşitlerimiz"
+            description="Her seviye sanatçı için profesyonel çözümler."
+            features={[
+                { title: "Standart ve Özel Ölçü", description: "İhtiyacınıza göre fırınlanmış gürgen şase üretimi.", items: [{ icon: Ruler, text: "Standart, Siyah, Double, Parçalı" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg?_wi=1" }, reverse: false },
+                { title: "Kalite ve Güvence", description: "Uzun ömürlü ve deforme olmayan şaseler.", items: [{ icon: Award, text: "Profesyonel gerginlik" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=1" }, reverse: true }
+            ]}
+            />
+        </div>
+
+        <div id="testimonials" data-section="testimonials">
+            <TestimonialCardTen
+                title="Müşteri Deneyimleri"
+                description="Atölyemizin kalitesine güvenen sanatçılar."
+                textboxLayout="split"
+                useInvertedBackground={false}
+                testimonials={[
+                    { id: "t1", title: "Kalite", quote: "Tuval gerginliği harika.", name: "Deniz A.", role: "Sanatçı" },
+                    { id: "t2", title: "Hız", quote: "Özel ölçülerim tam vaktinde ulaştı.", name: "Emre K.", role: "Resim Öğretmeni" }
+                ]}
+            />
+        </div>
+
+        <div id="faq" data-section="faq">
+            <FaqDouble
+            title="Sıkça Sorulan Sorular"
+            faqsAnimation="slide-up"
+            textboxLayout="split"
+            useInvertedBackground={true}
+            faqs={[
+                { id: "1", title: "Özel ölçü tuval yapıyor musunuz?", content: "Evet, atölyemizde istediğiniz her ölçüde üretim yapıyoruz." },
+                { id: "2", title: "Toplu alım imkanı var mı?", content: "Kurumlar ve sanat okulları için toplu üretim yapıyoruz." },
+                { id: "3", title: "Tuval beziniz kaliteli mi?", content: "1. sınıf, astarlı, uzun ömürlü kanvas kullanıyoruz." },
+                { id: "4", title: "Teslimat süresi ne kadar?", content: "Sipariş yoğunluğuna göre 3-5 iş gününde hazır." },
+                { id: "5", title: "Siyah tuvaliniz mevcut mu?", content: "Evet, özel siyah tuval seçeneklerimiz mevcuttur." },
+                { id: "6", title: "Ödemeyi nasıl yaparım?", content: "İletişim kanallarımızdan detaylı bilgi alabilirsiniz." }
+            ]}
+            />
+        </div>
+
+        <div id="contact-teklif" data-section="contact-teklif">
+            <ContactCTA
+            useInvertedBackground={false}
+            background={{ variant: "sparkles-gradient" }}
+            tag="İletişim"
+            title="Teklif Alın"
+            description="Ankara Yenimahalle’deki atölyemizde sizi bekliyoruz."
+            buttons={[
+                { text: "WhatsApp", href: "https://wa.me/903123974849" },
+                { text: "Yol Tarifi", href: "https://maps.google.com" }
+            ]}
+            />
+        </div>
+
+        <div id="footer" data-section="footer">
+            <FooterBaseReveal
+            logoText="Deniz Çerçeve"
+            columns={[
+                { title: "Adres", items: [{ label: "Yenimahalle, Ankara", href: "#" }] },
+                { title: "İletişim", items: [{ label: "0312 397 48 49", href: "tel:+903123974849" }] },
+                { title: "Çalışma Saatleri", items: [{ label: "Haftaiçi: 09:00-19:00", href: "#" }] }
+            ]}
+            />
+        </div>
+
+        <div className="fixed bottom-0 left-0 w-full bg-card z-50 flex border-t py-3 md:hidden">
+            <a href="tel:+903123974849" className="flex-1 flex flex-col items-center gap-1 text-xs font-semibold"><Phone size={20}/>Ara</a>
+            <a href="https://wa.me/903123974849" className="flex-1 flex flex-col items-center gap-1 text-xs font-semibold"><MessageCircle size={20}/>WhatsApp</a>
+            <a href="https://maps.google.com" className="flex-1 flex flex-col items-center gap-1 text-xs font-semibold"><MapPin size={20}/>Yol Tarifi</a>
+        </div>
       </ReactLenis>
     </ThemeProvider>
   );
