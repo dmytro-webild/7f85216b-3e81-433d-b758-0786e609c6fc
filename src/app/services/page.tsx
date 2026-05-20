@@ -32,7 +32,6 @@ export default function ServicesPage() {
             { name: "İletişim", id: "#contact" },
           ]}
           brandName="Deniz Çerçeve"
-          button={{ text: "Teklif Al", href: "#contact" }}
         />
         <HeroCarouselLogo
             logoText="Profesyonel Hizmetlerimiz"
@@ -58,6 +57,8 @@ export default function ServicesPage() {
             metrics={[
                 { id: "p1", value: "Şeffaf", title: "Net Fiyatlandırma", description: "Gizli maliyetler olmadan, malzeme ve işçilik bazlı hesaplama.", imageSrc: "http://img.b2bpic.net/free-photo/blank-frame-collection-wall-vase_23-2148875398.jpg" }
             ]}
+            textboxLayout="split"
+            useInvertedBackground={false}
         />
         <FaqSplitMedia
             faqs={[
@@ -65,14 +66,17 @@ export default function ServicesPage() {
                 { id: "q2", title: "Teslimat süresi nedir?", content: "Ürün tipine göre değişiklik göstermekle birlikte genelde 3-5 iş günüdür." }
             ]}
             title="Sıkça Sorulan Sorular"
+            description="Merak ettiğiniz her şey burada."
             faqsAnimation="slide-up"
             textboxLayout="split"
+            useInvertedBackground={false}
         />
         <ContactSplitForm
             title="Bize Ulaşın"
             description="Projeniz için hemen ücretsiz danışmanlık alın."
             inputs={[{ name: "name", type: "text", placeholder: "İsim" }, { name: "email", type: "email", placeholder: "E-posta" }]}
             textarea={{ name: "message", placeholder: "Mesajınız" }}
+            useInvertedBackground={true}
         />
         <FooterBase
           columns={[
