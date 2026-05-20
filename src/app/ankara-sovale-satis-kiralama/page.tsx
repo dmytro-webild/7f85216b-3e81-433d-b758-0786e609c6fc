@@ -7,7 +7,9 @@ import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCa
 import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Brush, BookOpen } from "lucide-react";
+import FaqSplitText from '@/components/sections/faq/FaqSplitText';
+import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
+import { Brush, BookOpen, Phone, MessageCircle, MapPin } from "lucide-react";
 
 export default function SovalePage() {
   const navItems = [
@@ -69,17 +71,15 @@ export default function SovalePage() {
             />
         </div>
 
-        <div id="guide" data-section="services">
-            <FeatureCardTen
-            animationType="slide-up"
-            textboxLayout="split"
-            useInvertedBackground={false}
-            title="Doğru Şövaleyi Seçin"
-            description="İhtiyacınıza göre rehberimiz."
-            features={[
-                { title: "Kullanım Amacı", description: "Hobi mi yoksa profesyonel stüdyo çalışması mı? Boyut ve dayanıklılık tercihinizi belirler.", items: [{ icon: BookOpen, text: "Özelleştirilmiş seçim" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/artist-painting-art-class_23-2149175240.jpg?_wi=1" }, reverse: false }
+        <div id="faq" data-section="faq">
+          <FaqSplitText
+            faqs={[
+              { id: "q1", title: "Kiralama süreleri ne kadar?", content: "Günlük, haftalık veya aylık kiralama seçeneklerimiz mevcuttur." },
+              { id: "q2", title: "Şövale kurulumu yapılıyor mu?", content: "Evet, sergi alanlarında kurulum desteği sağlıyoruz." }
             ]}
-            />
+            sideTitle="Sıkça Sorulan Sorular"
+            faqsAnimation="slide-up"
+          />
         </div>
 
         <div id="contact" data-section="contact-teklif">
@@ -87,7 +87,7 @@ export default function SovalePage() {
             useInvertedBackground={true}
             background={{ variant: "sparkles-gradient" }}
             tag="İletişim"
-            title="Hemen Teklif Alın veya Mağazayı Ziyaret Edin"
+            title="Hemen Teklif Alın"
             description="Ankara Yenimahalle'deki atölyemizde şövalelerimizi yakından inceleyin."
             buttons={[
                 { text: "WhatsApp", href: "https://wa.me/903123974849" },
@@ -104,6 +104,12 @@ export default function SovalePage() {
             logoText="Deniz Çerçeve"
             copyrightText="© 1974-2025 | Deniz Çerçeve Ankara"
             />
+        </div>
+        
+        <div className="fixed bottom-0 left-0 w-full bg-card z-50 flex border-t py-3 md:hidden">
+            <a href="tel:+903123974849" className="flex-1 flex flex-col items-center gap-1 text-xs font-semibold"><Phone size={20}/>Ara</a>
+            <a href="https://wa.me/903123974849" className="flex-1 flex flex-col items-center gap-1 text-xs font-semibold"><MessageCircle size={20}/>WhatsApp</a>
+            <a href="https://maps.google.com" className="flex-1 flex flex-col items-center gap-1 text-xs font-semibold"><MapPin size={20}/>Yol Tarifi</a>
         </div>
       </ReactLenis>
     </ThemeProvider>
