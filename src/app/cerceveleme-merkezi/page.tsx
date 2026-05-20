@@ -63,9 +63,9 @@ export default function CercevelemeMerkeziPage() {
             description="Her türlü sanat eseri için özel çerçeve çözümleri sunuyoruz."
             features={[
                 { title: "Ahşap Çerçeve", description: "Doğal ve şık ahşap profillerle mekanlarınıza sıcaklık katın.", items: [{ icon: Palette, text: "Geniş model seçenekleri" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg" }, reverse: false },
-                { title: "Modern Çerçeve", description: "Minimalist hatlara sahip, modern dekorasyona uygun çerçeveler.", items: [{ icon: Ruler, text: "Hassas kesim" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg" }, reverse: true },
-                { title: "Paspartu Uygulaması", description: "Eserinizin derinliğini ön plana çıkaran profesyonel paspartu tasarımları.", items: [{ icon: Layers, text: "Müze kalite karton" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg" }, reverse: false },
-                { title: "Özel Tasarım", description: "Kişiselleştirilmiş ölçü ve özel detaylarla çerçeveleriniz hayalinizdeki gibi.", items: [{ icon: Settings, text: "Tam kişiselleştirme" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg" }, reverse: true },
+                { title: "Modern Çerçeve", description: "Minimalist hatlara sahip, modern dekorasyona uygun çerçeveler.", items: [{ icon: Ruler, text: "Hassas kesim" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg?_wi=2" }, reverse: true },
+                { title: "Paspartu Uygulaması", description: "Eserinizin derinliğini ön plana çıkaran profesyonel paspartu tasarımları.", items: [{ icon: Layers, text: "Müze kalite karton" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg?_wi=2" }, reverse: false },
+                { title: "Özel Tasarım", description: "Kişiselleştirilmiş ölçü ve özel detaylarla çerçeveleriniz hayalinizdeki gibi.", items: [{ icon: Settings, text: "Tam kişiselleştirme" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=2" }, reverse: true },
             ]}
             />
         </div>
@@ -90,9 +90,9 @@ export default function CercevelemeMerkeziPage() {
             description="Sanatınızı mükemmelleştiren süreç."
             features={[
                 { title: "1. Keşif", description: "Eserinizi ve ihtiyaçlarınızı belirliyoruz.", items: [{ icon: Ruler, text: "Ücretsiz danışmanlık" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg?_wi=2" }, reverse: false },
-                { title: "2. Tasarım", description: "En uygun profil ve cam seçeneklerini seçiyoruz.", items: [{ icon: Palette, text: "Tasarım desteği" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg" }, reverse: true },
-                { title: "3. Üretim", description: "Atölyemizde hassas kesim ve birleştirme yapıyoruz.", items: [{ icon: Settings, text: "Yüksek teknoloji" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg" }, reverse: false },
-                { title: "4. Teslimat", description: "Eserinizi titizlikle paketleyip teslim ediyoruz.", items: [{ icon: Layers, text: "Güvenli teslimat" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg" }, reverse: true },
+                { title: "2. Tasarım", description: "En uygun profil ve cam seçeneklerini seçiyoruz.", items: [{ icon: Palette, text: "Tasarım desteği" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg?_wi=3" }, reverse: true },
+                { title: "3. Üretim", description: "Atölyemizde hassas kesim ve birleştirme yapıyoruz.", items: [{ icon: Settings, text: "Yüksek teknoloji" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg?_wi=3" }, reverse: false },
+                { title: "4. Teslimat", description: "Eserinizi titizlikle paketleyip teslim ediyoruz.", items: [{ icon: Layers, text: "Güvenli teslimat" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=3" }, reverse: true },
             ]}
             />
         </div>
