@@ -38,8 +38,6 @@ export default function TuvalPage() {
             <NavbarStyleFullscreen
               navItems={navItems}
               brandName="Deniz Çerçeve"
-              button={{ text: "Teklif Al", href: "#contact" }}
-              className="[&_a]:text-[13px] [&_a]:leading-[50px] [&_a]:block"
             />
         </div>
 
