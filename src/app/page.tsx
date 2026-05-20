@@ -7,9 +7,20 @@ import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
-import { Image, Phone, MessageCircle, MapPin } from "lucide-react";
+import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
+import { Image, Phone, MessageCircle, MapPin, Palette, Ruler } from "lucide-react";
 
 export default function LandingPage() {
+  const navItems = [
+    { name: "Anasayfa", id: "/" },
+    { name: "Hizmetler", id: "/services" },
+    { name: "Tuval", id: "/tuval" },
+    { name: "Kanvas Tablo Mağazası", id: "/ankara-kanvas-tablo" },
+    { name: "Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
+    { name: "Şövale", id: "/ankara-sovale-satis-kiralama" },
+    { name: "İletişim", id: "#contact" },
+  ];
+
   return (
     <ThemeProvider
         defaultButtonVariant="text-shift"
@@ -26,15 +37,7 @@ export default function LandingPage() {
       <ReactLenis root>
         <div id="nav" data-section="nav">
             <NavbarLayoutFloatingInline
-            navItems={[
-                { name: "Anasayfa", id: "/" },
-                { name: "Hizmetler", id: "/services" },
-                { name: "Tuval", id: "/tuval" },
-                { name: "Kanvas", id: "/ankara-kanvas-tablo" },
-                { name: "Kanvas İmalatı", id: "/ankara-kanvas-tablo-imalati" },
-                { name: "Ankara’da Şövale Satışı ve Kiralama", id: "/ankara-sovale-satis-kiralama" },
-                { name: "İletişim", id: "#contact" },
-            ]}
+            navItems={navItems}
             brandName="Deniz Çerçeve"
             button={{ text: "Teklif Al", href: "/services" }}
             />
@@ -60,15 +63,28 @@ export default function LandingPage() {
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={true}
+            title="Hizmetlerimiz"
+            description="Profesyonel üretim ve çerçeveleme çözümleri."
             features={[
-                {
-                title: "Çerçeveleme",                description: "Özel ölçü tablo ve fotoğraf çerçeveleme.",                items: [{ icon: Image, text: "Resim, tablo, puzzle, diploma çerçeveleri" }],
-                media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg?_wi=2", imageAlt: "Çerçeve" },
-                reverse: false,
-                },
+                { title: "Çerçeveleme Merkezi", description: "Özel ölçü tablo ve fotoğraf çerçeveleme.", items: [{ icon: Image, text: "Sanat eseri koruma" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg?_wi=2" }, reverse: false },
+                { title: "Tuval", description: "Yüksek kaliteli tuval çözümleri.", items: [{ icon: Palette, text: "Sanatçılar için ideal yüzey" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg" }, reverse: true },
+                { title: "Kanvas Tablo Mağazası", description: "Evinizi güzelleştiren dekoratif tablolar.", items: [{ icon: Image, text: "Premium baskı kalitesi" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg" }, reverse: false },
+                { title: "Kanvas Şase İmalatı", description: "Dayanıklı fırınlanmış ahşap şase üretimi.", items: [{ icon: Ruler, text: "Özel ölçü imalat" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg" }, reverse: true },
+                { title: "Şövale", description: "Profesyonel şövale satış ve kiralama.", items: [{ icon: Palette, text: "Sergi ve atölye modelleri" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg" }, reverse: false },
             ]}
-            title="İhtiyacınıza Göre Çözümler"
-            description="Ev, ofis ve atölye ihtiyaçlarınız için profesyonel çerçeveleme ve tuval hizmetleri."
+            />
+        </div>
+
+        <div id="testimonials" data-section="testimonials">
+            <TestimonialCardTen
+                title="Müşterilerimiz Neler Diyor?"
+                textboxLayout="split"
+                useInvertedBackground={false}
+                testimonials={[
+                    { id: "t1", title: "Kalite", quote: "Çerçeve kalitesi tek kelimeyle mükemmel.", name: "Ahmet Y.", role: "Sanatçı" },
+                    { id: "t2", title: "Güven", quote: "İmalat süreci çok hızlı ve profesyonel.", name: "Ayşe S.", role: "Galeri Sahibi" },
+                    { id: "t3", title: "Profesyonellik", quote: "Şövale kiralama hizmetinden çok memnun kaldım.", name: "Mehmet K.", role: "Akademisyen" }
+                ]}
             />
         </div>
 
@@ -91,7 +107,7 @@ export default function LandingPage() {
         <div id="footer" data-section="footer">
             <FooterBase
             columns={[
-                { title: "Menü", items: [{ label: "Anasayfa", href: "/" }, { label: "Hizmetler", href: "/services" }, { label: "Tuval", href: "/tuval" }, { label: "Kanvas", href: "/ankara-kanvas-tablo" }, { label: "Kanvas İmalatı", href: "/ankara-kanvas-tablo-imalati" }, { label: "Ankara’da Şövale Satışı ve Kiralama", href: "/ankara-sovale-satis-kiralama" }, { label: "İletişim", href: "#contact" }] },
+                { title: "Menü", items: navItems },
                 { title: "İletişim", items: [{ label: "0312 397 48 49", href: "tel:+903123974849" }] },
             ]}
             logoText="Deniz Çerçeve"
