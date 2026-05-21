@@ -7,8 +7,7 @@ import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
-import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
-import { Image, Phone, MessageCircle, MapPin, Palette, Ruler } from "lucide-react";
+import { Palette, Ruler, Image, MapPin, Phone, MessageCircle } from "lucide-react";
 
 export default function LandingPage() {
   const navItems = [
@@ -16,7 +15,6 @@ export default function LandingPage() {
     { name: "Çerçeveleme Merkezi", id: "/cerceveleme-merkezi" },
     { name: "Tuval", id: "/tuval" },
     { name: "Kanvas Tablo Mağazası", id: "/ankara-kanvas-tablo" },
-    { name: "Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
     { name: "Şövale", id: "/ankara-sovale-satis-kiralama" },
     { name: "İletişim", id: "#contact" },
   ];
@@ -28,7 +26,7 @@ export default function LandingPage() {
         borderRadius="rounded"
         contentWidth="medium"
         sizing="medium"
-        background="circleGradient"
+        background="none"
         cardStyle="glass-elevated"
         primaryButtonStyle="gradient"
         secondaryButtonStyle="glass"
@@ -39,7 +37,7 @@ export default function LandingPage() {
             <NavbarStyleFullscreen
               navItems={navItems}
               brandName="Deniz Çerçeve"
-              button={{ text: "Teklif Al", href: "/cerceveleme-merkezi" }}
+              button={{ text: "Hemen Ara", href: "tel:+903123974849" }}
             />
         </div>
 
@@ -48,14 +46,28 @@ export default function LandingPage() {
             logoText="Deniz Çerçeve"
             description="Ankara’da 1974’ten beri resim çerçeveleme, tuval ve kanvas şase üretiminde tecrübe ve kalite. Ölçünüze özel çözümler için hemen teklif alın."
             buttons={[
-                { text: "Hizmetlerimizi İnceleyin", href: "/cerceveleme-merkezi" },
-                { text: "Teklif Al", href: "#contact" },
+                { text: "Hemen Ara", href: "tel:+903123974849" },
+                { text: "Hemen Ara", href: "tel:+903123974849" },
             ]}
             slides={[
-                { imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg?_wi=1", imageAlt: "Çerçeveleme atölyesi" },
-                { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=1", imageAlt: "Özel çerçeve üretimi" },
+                { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DuLC64vrw5MEWRhPmsIWQkpOvm/uploaded-1779350851239-msjpj02y.png", imageAlt: "Deniz Çerçeve Logo" },
             ]}
             />
+        </div>
+
+        <div id="maps" data-section="maps">
+            <div className="container mx-auto py-12 px-6 flex justify-center">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.824982633857!2d32.78401367683937!3d39.923164987019676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f0d367e9b0d%3A0x6a053c84ea89c090!2sYenimahalle%2C%20Ankara!5e0!3m2!1str!2str!4v1715694830386!5m2!1str!2str" 
+                    width="100%" 
+                    height="450" 
+                    style={{ border: 0 }} 
+                    allowFullScreen 
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Konum"
+                ></iframe>
+            </div>
         </div>
 
         <div id="services" data-section="services">
@@ -68,40 +80,23 @@ export default function LandingPage() {
             features={[
                 { title: "Çerçeveleme Merkezi", description: "Özel ölçü tablo ve fotoğraf çerçeveleme.", items: [{ icon: Image, text: "Sanat eseri koruma" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg?_wi=2" }, reverse: false },
                 { title: "Tuval", description: "Yüksek kaliteli tuval çözümleri.", items: [{ icon: Palette, text: "Sanatçılar için ideal yüzey" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg?_wi=1" }, reverse: true },
-                { title: "Kanvas Tablo Mağazası", description: "Evinizi güzelleştiren dekoratif tablolar.", items: [{ icon: Image, text: "Premium baskı kalitesi" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=1" }, reverse: false },
-                { title: "Kanvas Şase İmalatı", description: "Dayanıklı fırınlanmış ahşap şase üretimi.", items: [{ icon: Ruler, text: "Özel ölçü imalat" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg?_wi=1" }, reverse: true },
-                { title: "Şövale", description: "Profesyonel şövale satış ve kiralama.", items: [{ icon: Palette, text: "Sergi ve atölye modelleri" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=2" }, reverse: false },
+                { title: "Tablo", description: "Evinizi güzelleştiren dekoratif tablolar.", items: [{ icon: Image, text: "Premium baskı kalitesi" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=1" }, reverse: false },
+                { title: "Şövale", description: "Profesyonel şövale satış ve kiralama.", items: [{ icon: Palette, text: "Sergi ve atölye modelleri" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=2" }, reverse: true },
             ]}
-            buttons={[{ text: "Çerçeveleme Merkezi", href: "/cerceveleme-merkezi" }]}
+            buttons={[{ text: "Hemen Ara", href: "tel:+903123974849" }]}
             />
         </div>
 
-        <div id="testimonials" data-section="testimonials">
-            <TestimonialCardTen
-                title="Müşterilerimiz Neler Diyor?"
-                description="Müşterilerimizin deniz çerçeve hakkındaki yorumları."
-                textboxLayout="split"
-                useInvertedBackground={false}
-                testimonials={[
-                    { id: "t1", title: "Kalite", quote: "Çerçeve kalitesi tek kelimeyle mükemmel.", name: "Ahmet Y.", role: "Sanatçı" },
-                    { id: "t2", title: "Güven", quote: "İmalat süreci çok hızlı ve profesyonel.", name: "Ayşe S.", role: "Galeri Sahibi" },
-                    { id: "t3", title: "Profesyonellik", quote: "Şövale kiralama hizmetinden çok memnun kaldım.", name: "Mehmet K.", role: "Akademisyen" }
-                ]}
-            />
-        </div>
-
-        <div id="contact-teklif" data-section="contact-teklif">
+        <div id="contact" data-section="contact-teklif">
             <ContactCTA
             useInvertedBackground={false}
             background={{ variant: "plain" }}
-            tag="İletişim ve Teklif"
-            title="Bizimle İletişime Geçin"
+            tag="İletişim"
+            title="Bize Ulaşın"
             description="Size yardımcı olmamız için aşağıdaki kanallardan bize ulaşabilir veya atölyemizi ziyaret edebilirsiniz."
             buttons={[
                 { text: "Hemen Ara", href: "tel:+903123974849" },
-                { text: "WhatsApp’tan Yaz", href: "https://wa.me/903123974849" },
-                { text: "Yol Tarifi Al", href: "https://maps.google.com" },
-                { text: "Instagram", href: "https://instagram.com" }
+                { text: "WhatsApp", href: "https://wa.me/903123974849" },
             ]}
             />
         </div>
