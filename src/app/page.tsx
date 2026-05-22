@@ -8,7 +8,7 @@ import FooterBase from '@/components/sections/footer/FooterBase';
 import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
-import { Image, Phone, MessageCircle, MapPin, Palette, Ruler } from "lucide-react";
+import { Image, Phone, MessageCircle, MapPin, Palette, Ruler, Frame, Square, Zap } from "lucide-react";
 
 export default function LandingPage() {
   const navItems = [
@@ -16,9 +16,8 @@ export default function LandingPage() {
     { name: "Çerçeveleme Merkezi", id: "/cerceveleme-merkezi" },
     { name: "Tuval", id: "/tuval" },
     { name: "Kanvas Tablo Mağazası", id: "/ankara-kanvas-tablo" },
-    { name: "Kanvas Şase İmalatı", id: "/ankara-kanvas-tablo-imalati" },
     { name: "Şövale", id: "/ankara-sovale-satis-kiralama" },
-    { name: "İletişim", id: "#contact" },
+    { name: "İletişim", id: "#contact-teklif" },
   ];
 
   return (
@@ -28,10 +27,10 @@ export default function LandingPage() {
         borderRadius="rounded"
         contentWidth="medium"
         sizing="medium"
-        background="circleGradient"
-        cardStyle="glass-elevated"
+        background="none"
+        cardStyle="solid"
         primaryButtonStyle="gradient"
-        secondaryButtonStyle="glass"
+        secondaryButtonStyle="solid"
         headingFontWeight="normal"
     >
       <ReactLenis root>
@@ -39,7 +38,8 @@ export default function LandingPage() {
             <NavbarStyleFullscreen
               navItems={navItems}
               brandName="Deniz Çerçeve"
-              button={{ text: "Teklif Al", href: "/cerceveleme-merkezi" }}
+              logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DuLC64vrw5MEWRhPmsIWQkpOvm/uploaded-1779453155471-4b3qfi4o.png"
+              button={{ text: "Hemen Ara", href: "tel:+903123974849" }}
             />
         </div>
 
@@ -48,31 +48,32 @@ export default function LandingPage() {
             logoText="Deniz Çerçeve"
             description="Ankara’da 1974’ten beri resim çerçeveleme, tuval ve kanvas şase üretiminde tecrübe ve kalite. Ölçünüze özel çözümler için hemen teklif alın."
             buttons={[
+                { text: "Hemen Ara", href: "tel:+903123974849" },
                 { text: "Hizmetlerimizi İnceleyin", href: "/cerceveleme-merkezi" },
-                { text: "Teklif Al", href: "#contact" },
             ]}
             slides={[
                 { imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg?_wi=1", imageAlt: "Çerçeveleme atölyesi" },
-                { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=1", imageAlt: "Özel çerçeve üretimi" },
             ]}
             />
+        </div>
+        
+        <div id="google-maps" className="w-full py-10 flex justify-center bg-white">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.123!2d32.79!3d39.96!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDU3JzM2LjAiTiAzMsKwNDcnMjQuMCJF!5e0!3m2!1str!2str!4v1700000000000" width="80%" height="300" style={{border:0}} loading="lazy"></iframe>
         </div>
 
         <div id="services" data-section="services">
             <FeatureCardTen
             animationType="slide-up"
             textboxLayout="split"
-            useInvertedBackground={true}
+            useInvertedBackground={false}
             title="Hizmetlerimiz"
             description="Profesyonel üretim ve çerçeveleme çözümleri."
             features={[
-                { title: "Çerçeveleme Merkezi", description: "Özel ölçü tablo ve fotoğraf çerçeveleme.", items: [{ icon: Image, text: "Sanat eseri koruma" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg?_wi=2" }, reverse: false },
+                { title: "Çerçeveleme Merkezi", description: "Özel ölçü tablo ve fotoğraf çerçeveleme.", items: [{ icon: Frame, text: "Sanat eseri koruma" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg?_wi=2" }, reverse: false },
                 { title: "Tuval", description: "Yüksek kaliteli tuval çözümleri.", items: [{ icon: Palette, text: "Sanatçılar için ideal yüzey" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg?_wi=1" }, reverse: true },
-                { title: "Kanvas Tablo Mağazası", description: "Evinizi güzelleştiren dekoratif tablolar.", items: [{ icon: Image, text: "Premium baskı kalitesi" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=1" }, reverse: false },
-                { title: "Kanvas Şase İmalatı", description: "Dayanıklı fırınlanmış ahşap şase üretimi.", items: [{ icon: Ruler, text: "Özel ölçü imalat" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg?_wi=1" }, reverse: true },
-                { title: "Şövale", description: "Profesyonel şövale satış ve kiralama.", items: [{ icon: Palette, text: "Sergi ve atölye modelleri" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=2" }, reverse: false },
+                { title: "Tablo", description: "Evinizi güzelleştiren dekoratif tablolar.", items: [{ icon: Image, text: "Premium baskı kalitesi" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=1" }, reverse: false },
+                { title: "Şövale", description: "Profesyonel şövale satış ve kiralama.", items: [{ icon: Square, text: "Sergi ve atölye modelleri" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=2" }, reverse: true },
             ]}
-            buttons={[{ text: "Çerçeveleme Merkezi", href: "/cerceveleme-merkezi" }]}
             />
         </div>
 
@@ -81,7 +82,7 @@ export default function LandingPage() {
                 title="Müşterilerimiz Neler Diyor?"
                 description="Müşterilerimizin deniz çerçeve hakkındaki yorumları."
                 textboxLayout="split"
-                useInvertedBackground={false}
+                useInvertedBackground={true}
                 testimonials={[
                     { id: "t1", title: "Kalite", quote: "Çerçeve kalitesi tek kelimeyle mükemmel.", name: "Ahmet Y.", role: "Sanatçı" },
                     { id: "t2", title: "Güven", quote: "İmalat süreci çok hızlı ve profesyonel.", name: "Ayşe S.", role: "Galeri Sahibi" },
@@ -100,8 +101,7 @@ export default function LandingPage() {
             buttons={[
                 { text: "Hemen Ara", href: "tel:+903123974849" },
                 { text: "WhatsApp’tan Yaz", href: "https://wa.me/903123974849" },
-                { text: "Yol Tarifi Al", href: "https://maps.google.com" },
-                { text: "Instagram", href: "https://instagram.com" }
+                { text: "Yol Tarifi Al", href: "https://maps.google.com" }
             ]}
             />
         </div>
@@ -115,12 +115,6 @@ export default function LandingPage() {
             logoText="Deniz Çerçeve"
             copyrightText="© 1974-2025 | Deniz Çerçeve Ankara"
             />
-        </div>
-
-        <div className="fixed bottom-0 left-0 w-full bg-card z-50 flex border-t py-3 md:hidden">
-            <a href="tel:+903123974849" className="flex-1 flex flex-col items-center gap-1 text-xs font-semibold"><Phone size={20}/>Ara</a>
-            <a href="https://wa.me/903123974849" className="flex-1 flex flex-col items-center gap-1 text-xs font-semibold"><MessageCircle size={20}/>WhatsApp</a>
-            <a href="https://maps.google.com" className="flex-1 flex flex-col items-center gap-1 text-xs font-semibold"><MapPin size={20}/>Yol Tarifi</a>
         </div>
       </ReactLenis>
     </ThemeProvider>
