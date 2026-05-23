@@ -47,6 +47,7 @@ export default function LandingPage() {
             <HeroBillboardCarousel
             title="Deniz Çerçeve"
             description="Ankara’da 1974’ten beri resim çerçeveleme, tuval ve kanvas şase üretiminde tecrübe ve kalite. Ölçünüze özel çözümler için hemen teklif alın."
+            background={{ variant: "plain" }}
             buttons={[{ text: "Hemen Ara", href: "tel:+903123974849" }]}
             mediaItems={[
                 { imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg?_wi=1", imageAlt: "Çerçeveleme atölyesi" },
