@@ -46,7 +46,7 @@ export default function LandingPage() {
         <div id="hero" data-section="hero">
             <HeroCarouselLogo
             logoText="Deniz Çerçeve"
-            description="Ankara’da 1974’ten beri resim çerçeveleme, tuval ve kanvas şase üretiminde tecrübe ve kalite. Ölçünüze özel çözümler için hemen teklif alın."
+            description="Ankara’da 50 yıllık 'Atölye' tecrübemizle resim çerçeveleme, tuval ve kanvas şase üretiminde kaliteyi adresinize getiriyoruz. 1974’ten beri ustalığımızla sanat eserlerinizi güvence altına alıyoruz."
             buttons={[
                 { text: "Hemen Ara", href: "tel:+903123974849" },
                 { text: "Hizmetlerimizi İnceleyin", href: "/cerceveleme-merkezi" },
