@@ -62,10 +62,10 @@ export default function CercevelemeMerkeziPage() {
             title="Hizmet Türleri"
             description="Her türlü sanat eseri için özel çerçeve çözümleri sunuyoruz."
             features={[
-                { title: "Ahşap Çerçeve", description: "Doğal ve şık ahşap profillerle mekanlarınıza sıcaklık katın.", items: [{ icon: Palette, text: "Geniş model seçenekleri" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg" }, reverse: false },
-                { title: "Modern Çerçeve", description: "Minimalist hatlara sahip, modern dekorasyona uygun çerçeveler.", items: [{ icon: Ruler, text: "Hassas kesim" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg?_wi=2" }, reverse: true },
-                { title: "Paspartu Uygulaması", description: "Eserinizin derinliğini ön plana çıkaran profesyonel paspartu tasarımları.", items: [{ icon: Layers, text: "Müze kalite karton" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg?_wi=2" }, reverse: false },
-                { title: "Özel Tasarım", description: "Kişiselleştirilmiş ölçü ve özel detaylarla çerçeveleriniz hayalinizdeki gibi.", items: [{ icon: Settings, text: "Tam kişiselleştirme" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=2" }, reverse: true },
+                { title: "Ahşap Çerçeve", description: "Doğal ve şık ahşap profillerle mekanlarınıza sıcaklık katın.", items: [{ icon: Palette, text: "Geniş model seçenekleri" }], media: { imageSrc: "https://img.b2bpic.net/premium-photo/minimalist-wooden-picture-frame-with-light-natural-finish-set-against-dark-weathered-wooden_220770-60767.jpg?id=238290633" }, reverse: false },
+                { title: "Modern Çerçeve", description: "Minimalist hatlara sahip, modern dekorasyona uygun çerçeveler.", items: [{ icon: Ruler, text: "Hassas kesim" }], media: { imageSrc: "https://img.b2bpic.net/premium-photo/series-paintings-with-black-gray-background_724419-6522.jpg?id=187637288" }, reverse: true },
+                { title: "Paspartu Uygulaması", description: "Eserinizin derinliğini ön plana çıkaran profesyonel paspartu tasarımları.", items: [{ icon: Layers, text: "Müze kalite karton" }], media: { imageSrc: "https://img.b2bpic.net/premium-photo/hand-assembling-frame-beautiful-modern-table-creative-workspace_152904-67038.jpg?id=420202761" }, reverse: false },
+                { title: "Özel Tasarım", description: "Kişiselleştirilmiş ölçü ve özel detaylarla çerçeveleriniz hayalinizdeki gibi.", items: [{ icon: Settings, text: "Tam kişiselleştirme" }], media: { imageSrc: "https://img.b2bpic.net/premium-photo/blank-white-canvas-easel-room_3972-3953.jpg?id=333998914" }, reverse: true },
             ]}
             />
         </div>
