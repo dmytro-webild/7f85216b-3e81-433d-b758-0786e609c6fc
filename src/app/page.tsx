@@ -5,10 +5,10 @@ import ReactLenis from "lenis/react";
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FeatureCardTen from '@/components/sections/feature/FeatureCardTen';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import HeroBillboardCarousel from '@/components/sections/hero/HeroBillboardCarousel';
+import HeroCarouselLogo from '@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
-import { Image, Phone, MessageCircle, MapPin, Palette, Ruler, Frame, Square } from "lucide-react";
+import { Image, Phone, MessageCircle, MapPin, Palette, Ruler, Frame, Square, Zap } from "lucide-react";
 
 export default function LandingPage() {
   const navItems = [
@@ -44,15 +44,15 @@ export default function LandingPage() {
         </div>
 
         <div id="hero" data-section="hero">
-            <HeroBillboardCarousel
-            title="Deniz Çerçeve"
+            <HeroCarouselLogo
+            logoText="Deniz Çerçeve"
             description="Ankara’da 1974’ten beri resim çerçeveleme, tuval ve kanvas şase üretiminde tecrübe ve kalite. Ölçünüze özel çözümler için hemen teklif alın."
-            background={{ variant: "plain" }}
-            buttons={[{ text: "Hemen Ara", href: "tel:+903123974849" }]}
-            mediaItems={[
+            buttons={[
+                { text: "Hemen Ara", href: "tel:+903123974849" },
+                { text: "Hizmetlerimizi İnceleyin", href: "/cerceveleme-merkezi" },
+            ]}
+            slides={[
                 { imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg?_wi=1", imageAlt: "Çerçeveleme atölyesi" },
-                { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=1", imageAlt: "Kalite" },
-                { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=1", imageAlt: "Şövale" }
             ]}
             />
         </div>
