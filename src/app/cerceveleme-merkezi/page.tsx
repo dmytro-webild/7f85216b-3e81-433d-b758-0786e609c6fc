@@ -89,8 +89,8 @@ export default function CercevelemeMerkeziPage() {
             title="4 Adımda Çerçeveleme"
             description="Sanatınızı mükemmelleştiren süreç."
             features={[
-                { title: "1. Keşif", description: "Eserinizi ve ihtiyaçlarınızı belirliyoruz.", items: [{ icon: Ruler, text: "Ücretsiz danışmanlık" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg?_wi=2" }, reverse: false },
-                { title: "2. Tasarım", description: "En uygun profil ve cam seçeneklerini seçiyoruz.", items: [{ icon: Palette, text: "Tasarım desteği" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg?_wi=3" }, reverse: true },
+                { title: "1. Keşif", description: "Eserinizi ve ihtiyaçlarınızı belirliyoruz.", items: [{ icon: Ruler, text: "Ücretsiz danışmanlık" }], media: { imageSrc: "https://img.b2bpic.net/premium-photo/examining-artwork-through-magnifying-glass_653240-12946.jpg?id=154389607" }, reverse: false },
+                { title: "2. Tasarım", description: "En uygun profil ve cam seçeneklerini seçiyoruz.", items: [{ icon: Palette, text: "Tasarım desteği" }], media: { imageSrc: "https://img.b2bpic.net/premium-photo/overhead-view-empty-picture-frame-textured-desk_926199-2123772.jpg?id=178268754" }, reverse: true },
                 { title: "3. Üretim", description: "Atölyemizde hassas kesim ve birleştirme yapıyoruz.", items: [{ icon: Settings, text: "Yüksek teknoloji" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/close-up-blank-canvas-easel_23-2148906917.jpg?_wi=3" }, reverse: false },
                 { title: "4. Teslimat", description: "Eserinizi titizlikle paketleyip teslim ediyoruz.", items: [{ icon: Layers, text: "Güvenli teslimat" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/studio-with-props-painting_23-2148885701.jpg?_wi=3" }, reverse: true },
             ]}
