@@ -52,7 +52,7 @@ export default function LandingPage() {
                 { text: "Hizmetlerimizi İnceleyin", href: "/cerceveleme-merkezi" },
             ]}
             slides={[
-                { imageSrc: "http://img.b2bpic.net/free-photo/modern-artist-concept-with-brushes-colorful-paint_23-2148002103.jpg?_wi=1", imageAlt: "Çerçeveleme atölyesi" },
+                { videoSrc: "https://storage.googleapis.com/webild/users/user_3DuLC64vrw5MEWRhPmsIWQkpOvm/uploaded-1783160346460-053p9jkg.mp4", imageAlt: "Çerçeveleme atölyesi" },
             ]}
             />
         </div>
