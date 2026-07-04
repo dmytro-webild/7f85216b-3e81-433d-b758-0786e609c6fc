@@ -69,10 +69,10 @@ export default function LandingPage() {
             title="Hizmetlerimiz"
             description="Profesyonel üretim ve çerçeveleme çözümleri."
             features={[
-                { title: "Çerçeveleme Merkezi", description: "Özel ölçü tablo ve fotoğraf çerçeveleme.", items: [{ icon: Frame, text: "Sanat eseri koruma" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/young-man-going-art-gallery_23-2149709090.jpg?_wi=2" }, reverse: false },
-                { title: "Tuval", description: "Yüksek kaliteli tuval çözümleri.", items: [{ icon: Palette, text: "Sanatçılar için ideal yüzey" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/painting-brushes-canvas-table_23-2148118073.jpg?_wi=1" }, reverse: true },
-                { title: "Tablo", description: "Evinizi güzelleştiren dekoratif tablolar.", items: [{ icon: Image, text: "Premium baskı kalitesi" }], media: { imageSrc: "https://img.b2bpic.net/free-photo/empty-artistic-atelier-with-rustic-watercolor-painting-displayed-canvas_482257-112092.jpg?id=410109330" }, reverse: false },
-                { title: "Şövale", description: "Profesyonel şövale satış ve kiralama.", items: [{ icon: Square, text: "Sergi ve atölye modelleri" }], media: { imageSrc: "http://img.b2bpic.net/free-photo/vintage-golden-frame-easel_23-2148661004.jpg?_wi=2" }, reverse: true },
+                { title: "Çerçeveleme Merkezi", description: "Özel ölçü tablo ve fotoğraf çerçeveleme.", items: [{ icon: Frame, text: "Sanat eseri koruma" }], media: { imageSrc: "https://storage.googleapis.com/webild/users/user_3DuLC64vrw5MEWRhPmsIWQkpOvm/uploaded-1783160509275-oovferg9.jpg" }, reverse: false },
+                { title: "Tuval", description: "Yüksek kaliteli tuval çözümleri.", items: [{ icon: Palette, text: "Sanatçılar için ideal yüzey" }], media: { imageSrc: "https://storage.googleapis.com/webild/users/user_3DuLC64vrw5MEWRhPmsIWQkpOvm/uploaded-1783160532640-ff9uko8z.jpg" }, reverse: true },
+                { title: "Tablo", description: "Evinizi güzelleştiren dekoratif tablolar.", items: [{ icon: Image, text: "Premium baskı kalitesi" }], media: { imageSrc: "https://storage.googleapis.com/webild/users/user_3DuLC64vrw5MEWRhPmsIWQkpOvm/uploaded-1783160550237-zgo4fwa9.jpg" }, reverse: false },
+                { title: "Şövale", description: "Profesyonel şövale satış ve kiralama.", items: [{ icon: Square, text: "Sergi ve atölye modelleri" }], media: { imageSrc: "https://storage.googleapis.com/webild/users/user_3DuLC64vrw5MEWRhPmsIWQkpOvm/uploaded-1783160572755-bbsnjoex.jpg" }, reverse: true },
             ]}
             />
         </div>
